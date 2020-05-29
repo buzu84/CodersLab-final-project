@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Astrolabium</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;600&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Charmonman:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Karma:wght@300;400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
@@ -16,20 +15,20 @@
   </head>
   <body>
     <header class="header container">
-      <h1 class="logo"><span>Zaplanuj</span><span>Jedzonko</span></h1>
+      <h1 class="logo"><span>Astro</span><span>Labium</span></h1>
       <nav>
         <ul>
           <li>
-            <a class="nav_diff" href="#">ZAPLANUJ POSILKI!</a>
+            <a class="nav_diff" href="app.html">ZAPLANUJ WYCIECZKI!</a>
           </li>
           <li>
-            <a href="#">DLACZEGO WARTO!</a>
+            <a href="#worth_it">DLACZEGO WARTO!</a>
           </li>
           <li>
-            <a href="#">O MNIE</a>
+            <a href="#about_me">O MNIE</a>
           </li>
           <li>
-            <a href="#">KONTAKT</a>
+            <a href="#contact">KONTAKT</a>
           </li>
         </ul>
       </nav>
@@ -38,9 +37,9 @@
       <div class="carusel-content pl-30 pr-30">
         <i class="fas fa-arrow-left leftarrow"></i>
         <ul>
-          <li class="visible"><h1>Lorem ipsum dolor sit amet enim.</h1> Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. </li>
-          <li><h1>Curabitur et ligula.</h1> Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. </li>
-          <li><h1>Phasellus fermentum in, dolor.</h1> Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, l</li>
+          <li class="visible"><h1>Miejsca</h1> Jesli chcesz ogladac nocne niebo, interesujesz sie astronomia, tu znajdziesz miejsca do ogladania gwiazd golym okiem... </li>
+          <li><h1>Wydarzenia</h1> Jesli chcesz znac najblizsze wydarzenia na niebie dla Twojego polozenia, takie jak deszcze meteorytow </li>
+          <li><h1>Inne</h1> oraz wiele innych-w przygotowaniu </li>
         </ul>
         <i class="fas fa-arrow-right rightarrow"></i>
       </div>
@@ -48,62 +47,57 @@
     <section  class="calltoaction container pl-30 pr-30">
       <!-- CTA + button -->
       <div>
-        <h2>Lorem ipsum dolor sit amet enim.</h2>
-        <p>Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
+        <h2>Astrolabium</h2>
+        <p>Aplikacja do planowania obserwacji nocnego nieba!</p>
       </div>
       <a href="app.html"><button class="generalButton">Uruchom aplikacje</button></a>
 
     </section>
-    <section class="info-section container pl-30 pr-30">
+    <section id="worth_it" class="info-section container pl-30 pr-30">
       <!-- features -->
       <div class="info-item">
         <div class="info-box">
           <div class="icon"><i class="fas fa-check"></i></div>
-          <h2>Lorem ipsum dolor sit amet</h2>
+          <h2>Golym okiem</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut malesuada ipsum, nec egestas nunc.
-            Nunc nec arcu arcu. Vestibulum et pretium nibh. Maecenas.
+            Sprawdz miejscowki o odpowiedniej ciemnosci wokol Twojego miejsca zamieszkania
           </p>
         </div>
         <div class="info-box">
           <div class="icon"><i class="far fa-clock"></i></div>
-          <h2>Lorem ipsum dolor sit amet</h2>
+          <h2>Wydarzenia</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut malesuada ipsum, nec egestas nunc.
-            Nunc nec arcu arcu. Vestibulum et pretium nibh. Maecenas.
+            Badz na biezaco z wydarzeniami na niebie. Deszcze meteorytow i inne.
           </p>
         </div>
         <div class="info-box">
           <div class="icon"><i class="fas fa-align-left"></i></div>
-          <h2>Lorem ipsum dolor sit amet</h2>
+          <h2>Gdy pogoda nie dopisze..</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut malesuada ipsum, nec egestas nunc.
-            Nunc nec arcu arcu. Vestibulum et pretium nibh. Maecenas.
+            Skorzystaj z bazy obserwatoriow astronomicznych w Twojej okolicy.
           </p>
         </div>
       </div>
     </section>
     <section class="newsletter container pl-30 pr-30">
       <!-- newsletter -->
-      <h3>Zapisz się do naszego newlettera z najnowszymi przepisami!</h3><form><input type="text" name="email" placeholder=""><button class="generalButton" type="submit">Zapisz się</button></form>
+      <h3>Zapisz się newslettera Astrolabium!</h3><form><input type="text" name="email" placeholder=""><button class="generalButton" type="submit">Zapisz się</button></form>
     </section>
     <section>
       <!-- about me -->
     </section>
-    <section class="about_me container pl-30 pr-30">
+    <section id="about_me" class="about_me container pl-30 pr-30">
       <div class="container_me">
         <div class="author_pic"></div>
         <div class="author_description">
-          <h3>Lorem ipsum dolor sit amet</h3>
+          <h3>AstroFan</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, consectetur consequatur debitis
-            deleniti dolore earum, fuga laboriosam nesciunt optio porro quasi quibusdam quidem similique sint
-            veniam! Cumque necessitatibus sunt vero.
+            Odkryj tajemnice nieprzeniknionego Wszechswiata razem z autorem Astrolabium...
           </p>
         </div>
       </div>
     </section>
-    <footer class="container">
+    <footer id="contact" class="container">
       <!-- copyright -->
       <div class="flexbox">
         <div class="footerElements"><h3>Lorem ipsum dolor sit.</h3><p>Consectetur adipiscing elit. Sed at bibendum nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> </div>
@@ -126,7 +120,7 @@
           </div>
         </div>
       </div>
-      <div class="ender">Copyright <span> ZaplanujJedzonko.pl</span></div>
+      <div class="ender">Copyright <span> Astrolabium.pl</span></div>
     </footer>
   </body>
 </html>

@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-
-    //Kod dla Caruseli Zadanie 1.2
-
     const next = document.querySelector(".rightarrow");
     const prev = document.querySelector(".leftarrow");
     const tablicali = document.querySelector(".carusel-content").querySelectorAll( "ul li");

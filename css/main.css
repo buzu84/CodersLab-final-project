@@ -61,18 +61,18 @@ a {
 
 /* line 40, scss/main.css */
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-family: 'Karma', serif;
+  font-size: 20px;
 }
 
 /* line 44, scss/main.css */
 body {
-  background-image: url(../images/background.image.png);
+  background-image: url(../images/background.image.jpg);
 }
 
 /* line 47, scss/main.css */
 .logo {
-  font-family: 'Charmonman', cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 /* line 49, scss/main.css */
@@ -82,7 +82,7 @@ body {
 
 /* line 51, scss/main.css */
 .logo span:nth-last-child(1) {
-  color: #E58A20;
+  color: gold;
 }
 
 /* line 54, scss/main.css */
@@ -92,7 +92,7 @@ body {
   align-items: center;
   height: 80px;
   width: 100%;
-  background: #4a4a49;
+  background: #110367;
 }
 
 /* line 62, scss/main.css */
@@ -119,7 +119,7 @@ li > a a:hover {
 
 /* line 74, scss/main.css */
 .nav_diff {
-  color: #E58A20;
+  color: gold;
 }
 
 /* line 77, scss/main.css */
@@ -176,7 +176,7 @@ li > a a:hover {
 /* line 106, scss/main.css */
 .calltoaction {
   width: 100%;
-  background: #4a4a49;
+  background: #110367;
   color: white;
   display: flex;
   align-items: center;
@@ -209,7 +209,7 @@ li > a a:hover {
 
 /* line 126, scss/main.css */
 .info-section {
-  color: #4a4a49;
+  color: #110367;
   background: #FFFFFA;
 }
 
@@ -256,7 +256,7 @@ li > a a:hover {
 .newsletter {
   height: 100px;
   color: white;
-  background-color: #5B605F;
+  background-color: #110367;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -299,7 +299,7 @@ li > a a:hover {
   max-width: 30%;
   width: 336px;
   height: 336px;
-  background-image: url(.././images/mariaXsinska2.jpg);
+  background-image: url(../images/stars.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -343,39 +343,55 @@ footer div:first-child {
 .footerElements {
   padding: 30px;
   width: 250px;
+  font-size: 15px;
 }
 
-/* line 205, scss/main.css */
+/* line 206, scss/main.css */
 .footerElements input {
   width: 100px;
   height: 25px;
 }
 
-/* line 208, scss/main.css */
+/* line 209, scss/main.css */
 .footerElements button {
   padding: 5px;
 }
 
-/* line 211, scss/main.css */
+/* line 212, scss/main.css */
 .socialMedia {
   font-size: 30px;
 }
 
-/* line 213, scss/main.css */
+/* line 214, scss/main.css */
 .socialMedia i {
   padding: 25px 25px 0 0;
 }
 
-/* line 216, scss/main.css */
+/* line 217, scss/main.css */
 .ender {
   font-size: 0.9em;
   padding: 10px 0;
-  background-color: #4a4a49;
+  background-color: #110367;
   color: white;
   text-align: center;
 }
 
-/* line 222, scss/main.css */
+/* line 223, scss/main.css */
 .ender span {
-  color: #E58A20;
+  color: gold;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+/* line 228, scss/main.css */
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+/* line 232, scss/main.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

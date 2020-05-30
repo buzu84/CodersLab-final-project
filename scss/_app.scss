@@ -9,3 +9,13 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.app_pic {
+  height: 300px;
+  width: 100vw;
+  background: #1f1f29;
+  background-image: url(../images/New-Header.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}

@@ -1,9 +1,11 @@
 body{
-    background-image: url(../images/background.image.jpg);
+    // background-image: url(../images/background.image.jpg);
 }
 
 .logo{
     font-family: 'Dancing Script', cursive;
+    background-image: url(../images/logo2.jpeg);
+    border-radius: 5%;
     span{
         color:white;
     }
@@ -17,8 +19,9 @@ body{
   align-items: center;
   height: 80px;
   width: 100%;
-  background: $headingAndColumns;
+  background: #231854;
 }
+
 nav > ul > li {
     display: inline;
     padding: 0 40px;
@@ -94,8 +97,13 @@ li > a {
     }
   }
   button {
-    width: 150px;
-    height: 35px;
+    font-family: 'Dancing Script', cursive;
+    color: $logoColor;
+    width: 200px;
+    height: 55px;
+    border-radius: 10%;
+    background: #1f1f29;
+    font-size: 1.5rem;
   }
 }
 
@@ -136,28 +144,35 @@ li > a {
   }
 }
 
-.newsletter {
+// .newsletter {
+//   height: 100px;
+//   color: white;
+//   background-color: $headingAndColumns;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//
+//   h3 {
+//     font-size: 26px;
+//     font-weight: 300;
+//   }
+//
+//   input {
+//     width: 200px;
+//     height: 35px;
+//   }
+//
+//   button {
+//     width: 100px;
+//     height: 35px;
+//   }
+// }
+.milky_way {
+  width: 1280px;
   height: 100px;
-  color: white;
-  background-color: $headingAndColumns;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  h3 {
-    font-size: 26px;
-    font-weight: 300;
-  }
-
-  input {
-    width: 200px;
-    height: 35px;
-  }
-
-  button {
-    width: 100px;
-    height: 35px;
-  }
+  background-image: url(../images/universe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about_me {
@@ -172,7 +187,7 @@ li > a {
       max-width: 30%;
       width: 336px;
       height: 336px;
-      background-image: url(../images/stars.jpg);
+      background-image: url(../images/draconids.jpg);
       background-repeat: no-repeat;
       background-size: cover;
 

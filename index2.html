@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Astrolabium</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Karma:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <h1 class="logo"><span>Astro</span><span>Labium</span></h1>
+      <nav>
+        <ul>
+          <li>
+            <a class="nav_diff" href="app.html">ZAPLANUJ WYCIECZKI!</a>
+          </li>
+          <li>
+            <a href="#worth_it">DLACZEGO WARTO!</a>
+          </li>
+          <li>
+            <a href="#about_me">O MNIE</a>
+          </li>
+          <li>
+            <a href="#contact">KONTAKT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="carusel container ">
+      <div class="carusel-content pl-30 pr-30">
+        <i class="fas fa-arrow-left leftarrow"></i>
+        <ul>
+          <li class="visible"><h1>Miejsca</h1> Jesli chcesz ogladac nocne niebo, interesujesz sie astronomia, tu znajdziesz miejsca do ogladania gwiazd golym okiem... </li>
+          <li><h1>Wydarzenia</h1> Jesli chcesz znac najblizsze wydarzenia na niebie dla Twojego polozenia, takie jak deszcze meteorytow </li>
+          <li><h1>Inne</h1> oraz wiele innych-w przygotowaniu </li>
+        </ul>
+        <i class="fas fa-arrow-right rightarrow"></i>
+      </div>
+    </section>
+    <section  class="calltoaction container pl-30 pr-30">
+      <!-- CTA + button -->
+      <div>
+        <h2>Astrolabium</h2>
+        <p>Aplikacja do planowania obserwacji nocnego nieba!</p>
+      </div>
+      <a href="app.html"><button class="generalButton">Uruchom aplikacje</button></a>
+
+    </section>
+    <section id="worth_it" class="info-section container pl-30 pr-30">
+      <!-- features -->
+      <div class="info-item">
+        <div class="info-box">
+          <div class="icon"><i class="fas fa-check"></i></div>
+          <h2>Golym okiem</h2>
+          <p>
+            Sprawdz miejscowki o odpowiedniej ciemnosci wokol Twojego miejsca zamieszkania
+          </p>
+        </div>
+        <div class="info-box">
+          <div class="icon"><i class="far fa-clock"></i></div>
+          <h2>Wydarzenia</h2>
+          <p>
+            Badz na biezaco z wydarzeniami na niebie. Deszcze meteorytow i inne.
+          </p>
+        </div>
+        <div class="info-box">
+          <div class="icon"><i class="fas fa-align-left"></i></div>
+          <h2>Gdy pogoda nie dopisze..</h2>
+          <p>
+            Skorzystaj z bazy obserwatoriow astronomicznych w Twojej okolicy.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="newsletter container pl-30 pr-30">
+      <! newsletter -->
+      <!-- <h3>Zapisz się newslettera Astrolabium!</h3><form><input type="text" name="email" placeholder=""><button class="generalButton" type="submit">Zapisz się</button></form>
+    </section> -->
+    <section class="container pr-30">
+      <div class="milky_way"></div>
+    </section>
+
+    <section id="about_me" class="about_me container pl-30 pr-30">
+      <div class="container_me">
+        <div class="author_pic"></div>
+        <div class="author_description">
+          <h3>AstroFan</h3>
+          <p>
+            Odkryj tajemnice nieprzeniknionego Wszechswiata razem z autorem Astrolabium...
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="container">
+      <!-- copyright -->
+      <div class="flexbox">
+        <div class="footerElements"><h3>Lorem ipsum dolor sit.</h3><p>Consectetur adipiscing elit. Sed at bibendum nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> </div>
+        <div class="footerElements">
+          <h3>Lorem ipsum amet.</h3>
+          <ul>
+            <li>Sed at bibendum nibh.</li>
+            <li>Nullam gravida pulvinar mi.</li>
+            <li>Donec ipsum erat.</li>
+            <li>Consectetur adipiscing elit.</li>
+          </ul>
+        </div>
+        <div class="footerElements">
+          <h3>Badz na biezaco!</h3>
+          <form><input type="text" name="email" placeholder=""><button class="generalButton" type="submit">Wyslij</button></form>
+          <div class="socialMedia flexbox">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="ender">Copyright <span> Astrolabium.pl</span></div>
+    </footer>
+  </body>
+</html>

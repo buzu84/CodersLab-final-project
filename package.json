@@ -1,21 +1,42 @@
 {
-  "name": "1_sass_instalacja",
+  "name": "CodersLab-final-project",
   "version": "1.0.0",
-  "description": "<img alt=\"Logo\" src=\"http://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
-  "main": "gulpfile.js",
+  "description": "<img src=\"http://coderslab.pl/img/coderslab-logo.png\" align=\"right\" width=\"400\"/>",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot -d",
+    "build": "webpack -p"
   },
-  "author": "Dream Team",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buzu84/CodersLab-final-project.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buzu84/CodersLab-final-project/issues"
+  },
+  "homepage": "https://github.com/buzu84/CodersLab-final-project#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
   "dependencies": {
+    "date-fns": "^2.11.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.2.0",
+    "whatwg-fetch": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.1"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "Scrum Lab Dream Team"
   }
 }

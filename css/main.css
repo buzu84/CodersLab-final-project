@@ -364,28 +364,20 @@ footer div:first-child {
   color: gold;
 }
 
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
-/* line 222, scss/main.css */
-#map {
-  height: 100%;
+/* line 220, scss/main.css */
+.app-logo {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  background: #009273;
+  font-size: 4rem;
 }
 
-/* Optional: Makes the sample page fill the window. */
-/* line 226, scss/main.css */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+/* line 225, scss/main.css */
+.app-logo span {
+  color: white;
 }
 
-/* line 231, scss/main.css */
-.app_pic {
-  height: 300px;
-  width: 100vw;
-  background: #1f1f29;
-  background-image: url(../images/New-Header.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top;
+/* line 227, scss/main.css */
+.app-logo span:nth-last-child(1) {
+  color: gold;
 }

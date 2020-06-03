@@ -11,6 +11,8 @@ import mapStyles from "./mapStyles";
 
 function Map() {
   const [selectedPark, setSelectedPark] = useState(null);
+  const [lat, setLat] = useState(50.064651);
+  const [lng, setLng] = useState(19.944981);
 
   useEffect(() => {
     const listener = e => {
@@ -25,12 +27,30 @@ function Map() {
     };
   }, []);
 
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      setLat(position.coords.latitude);
+      setLng(position.coords.longitude);
+      console.log("API: ", process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
+      console.log("Latitude is :", position.coords.latitude);
+      console.log("Longitude is :", position.coords.longitude);
+    });
+  }, []);
+
   return (
+    <>
     <GoogleMap
       defaultZoom={10}
-      defaultCenter={{ lat: 50.064651, lng: 19.944981 }}
+      defaultCenter={{ lat: lat, lng: lng }}
       defaultOptions={{ styles: mapStyles }}
     />
+    <Marker
+      position={{
+        lat: lat,
+        lng: lng
+      }}
+      />
+      </>
       // {parkData.features.map(park => (
       //   <Marker
       //     key={park.properties.PARK_ID}
@@ -64,6 +84,8 @@ function Map() {
       //     </div>
       //   </InfoWindow>
       // )}
+
+
 
   );
 }

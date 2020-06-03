@@ -15,6 +15,7 @@ import MeteorShowerDates from './MeteorShowerDates';
 export default () => {
   return (
     <>
+      <h1 className="app-logo"><span>Astro</span><span>Labium</span></h1>
       <FinalMap />
       <MeteorShowerDates />
     </>

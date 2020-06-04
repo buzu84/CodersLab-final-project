@@ -364,22 +364,7 @@ footer div:first-child {
   color: gold;
 }
 
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
-/* line 222, scss/main.css */
-#map {
-  height: 100%;
-}
-
-/* Optional: Makes the sample page fill the window. */
-/* line 226, scss/main.css */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 231, scss/main.css */
+/* line 220, scss/main.css */
 .app_pic {
   height: 300px;
   width: 100vw;

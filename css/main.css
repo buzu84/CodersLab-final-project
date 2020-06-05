@@ -348,7 +348,24 @@ footer div:first-child {
   color: gold;
 }
 
-/* line 208, scss/main.css */
+
+.app-logo {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  background: #009273;
+  font-size: 4rem;
+}
+
+/* line 220, scss/main.css */
+.app-logo span {
+  color: white;
+}
+
+/* line 222, scss/main.css */
+.app-logo span:nth-last-child(1) {
+  color: gold;
+  
+
 .logo {
   font-family: 'Dancing Script', cursive;
   background-image: url(../images/logo2.jpeg);
@@ -663,13 +680,3 @@ canvas {
   bottom: 0;
 }
 
-/* line 396, scss/main.css */
-.app_pic {
-  height: 300px;
-  width: 100vw;
-  background: #1f1f29;
-  background-image: url(../images/New-Header.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top;
-}

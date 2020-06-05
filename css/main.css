@@ -248,29 +248,20 @@ li > a a:hover {
 }
 
 /* line 150, scss/main.css */
-.milky_way {
-  width: 1280px;
-  height: 100px;
-  background-image: url(../images/universe.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* line 157, scss/main.css */
 .about_me {
   font-size: 1.3rem;
   background-color: #f9dba5;
   padding: 100px 0;
 }
 
-/* line 161, scss/main.css */
+/* line 154, scss/main.css */
 .about_me .container_me {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
 
-/* line 165, scss/main.css */
+/* line 158, scss/main.css */
 .about_me .container_me .author_pic {
   max-width: 30%;
   width: 336px;
@@ -280,70 +271,70 @@ li > a a:hover {
   background-size: cover;
 }
 
-/* line 172, scss/main.css */
+/* line 165, scss/main.css */
 .about_me .container_me .author_description {
   width: 50%;
 }
 
-/* line 174, scss/main.css */
+/* line 167, scss/main.css */
 .about_me .container_me .author_description h3 {
   font-size: 1.9rem;
   font-weight: 500;
   margin-bottom: 0.75em;
 }
 
-/* line 178, scss/main.css */
+/* line 171, scss/main.css */
 .about_me .container_me .author_description p {
   overflow: hidden;
   font-weight: 500;
 }
 
-/* line 182, scss/main.css */
+/* line 175, scss/main.css */
 footer {
   background-color: #5B605F;
   color: white;
 }
 
-/* line 185, scss/main.css */
+/* line 178, scss/main.css */
 footer h3 {
   margin-bottom: 15px;
   font-weight: 400;
 }
 
-/* line 188, scss/main.css */
+/* line 181, scss/main.css */
 footer div:first-child {
   justify-content: space-evenly;
 }
 
-/* line 191, scss/main.css */
+/* line 184, scss/main.css */
 .footerElements {
   padding: 30px;
   width: 250px;
   font-size: 15px;
 }
 
-/* line 195, scss/main.css */
+/* line 188, scss/main.css */
 .footerElements input {
   width: 100px;
   height: 25px;
 }
 
-/* line 198, scss/main.css */
+/* line 191, scss/main.css */
 .footerElements button {
   padding: 5px;
 }
 
-/* line 201, scss/main.css */
+/* line 194, scss/main.css */
 .socialMedia {
   font-size: 30px;
 }
 
-/* line 203, scss/main.css */
+/* line 196, scss/main.css */
 .socialMedia i {
   padding: 25px 25px 0 0;
 }
 
-/* line 206, scss/main.css */
+/* line 199, scss/main.css */
 .ender {
   font-size: 0.9em;
   padding: 10px 0;
@@ -352,12 +343,11 @@ footer div:first-child {
   text-align: center;
 }
 
-/* line 212, scss/main.css */
+/* line 205, scss/main.css */
 .ender span {
   color: gold;
 }
 
-/* line 215, scss/main.css */
 
 .app-logo {
   font-family: 'Dancing Script', cursive;
@@ -375,23 +365,24 @@ footer div:first-child {
 .app-logo span:nth-last-child(1) {
   color: gold;
   
+
 .logo {
   font-family: 'Dancing Script', cursive;
   background-image: url(../images/logo2.jpeg);
   border-radius: 5%;
 }
 
-/* line 219, scss/main.css */
+/* line 212, scss/main.css */
 .logo span {
   color: white;
 }
 
-/* line 221, scss/main.css */
+/* line 214, scss/main.css */
 .logo span:nth-last-child(1) {
   color: gold;
 }
 
-/* line 224, scss/main.css */
+/* line 217, scss/main.css */
 .header {
   display: flex;
   justify-content: space-around;
@@ -401,40 +392,40 @@ footer div:first-child {
   background: #231854;
 }
 
-/* line 232, scss/main.css */
+/* line 225, scss/main.css */
 nav > ul > li {
   display: inline;
   padding: 0 40px;
 }
 
-/* line 235, scss/main.css */
+/* line 228, scss/main.css */
 nav > ul > li :hover {
   opacity: 80%;
 }
 
-/* line 238, scss/main.css */
+/* line 231, scss/main.css */
 li > a {
   text-decoration: none;
   color: white;
 }
 
-/* line 241, scss/main.css */
+/* line 234, scss/main.css */
 li > a a:hover {
   opacity: 80%;
 }
 
-/* line 244, scss/main.css */
+/* line 237, scss/main.css */
 .nav_diff {
   color: gold;
 }
 
-/* line 247, scss/main.css */
+/* line 240, scss/main.css */
 .carusel {
   padding: 100px 0;
   background-color: #f9dba5;
 }
 
-/* line 251, scss/main.css */
+/* line 244, scss/main.css */
 .carusel-content {
   display: flex;
   align-items: center;
@@ -442,7 +433,7 @@ li > a a:hover {
   width: 100%;
 }
 
-/* line 256, scss/main.css */
+/* line 249, scss/main.css */
 .carusel-content i {
   display: inline-block;
   padding: 10px;
@@ -450,36 +441,36 @@ li > a a:hover {
   cursor: pointer;
 }
 
-/* line 261, scss/main.css */
+/* line 254, scss/main.css */
 .carusel-content i:hover {
   color: grey;
 }
 
-/* line 263, scss/main.css */
+/* line 256, scss/main.css */
 .carusel-content ul {
   padding: 0 20px;
   list-style: none;
   width: 60%;
 }
 
-/* line 267, scss/main.css */
+/* line 260, scss/main.css */
 .carusel-content li {
   font-size: 1.5rem;
   display: none;
   text-align: center;
 }
 
-/* line 271, scss/main.css */
+/* line 264, scss/main.css */
 .carusel-content li h1 {
   font-size: 2rem;
 }
 
-/* line 273, scss/main.css */
+/* line 266, scss/main.css */
 .carusel-content .visible {
   display: block;
 }
 
-/* line 276, scss/main.css */
+/* line 269, scss/main.css */
 .calltoaction {
   width: 100%;
   background: #063164;
@@ -489,25 +480,25 @@ li > a a:hover {
   justify-content: space-between;
 }
 
-/* line 283, scss/main.css */
+/* line 276, scss/main.css */
 .calltoaction div {
   padding: 40px 0;
   width: 60%;
 }
 
-/* line 286, scss/main.css */
+/* line 279, scss/main.css */
 .calltoaction div h2 {
   font-size: 26px;
   font-weight: 300;
   padding-bottom: 10px;
 }
 
-/* line 290, scss/main.css */
+/* line 283, scss/main.css */
 .calltoaction div p {
   font-size: 1rem;
 }
 
-/* line 292, scss/main.css */
+/* line 285, scss/main.css */
 .calltoaction button {
   font-family: 'Dancing Script', cursive;
   color: gold;
@@ -518,32 +509,32 @@ li > a a:hover {
   font-size: 1.5rem;
 }
 
-/* line 301, scss/main.css */
+/* line 294, scss/main.css */
 .info-section {
   color: #063164;
   background: #f9dba5;
 }
 
-/* line 304, scss/main.css */
+/* line 297, scss/main.css */
 .info-section .info-item {
   display: flex;
   justify-content: space-around;
 }
 
-/* line 307, scss/main.css */
+/* line 300, scss/main.css */
 .info-section .info-item .info-box {
   text-align: center;
   width: 20rem;
 }
 
-/* line 310, scss/main.css */
+/* line 303, scss/main.css */
 .info-section .info-item .info-box h2 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* line 314, scss/main.css */
+/* line 307, scss/main.css */
 .info-section .info-item .info-box p {
   font-size: 1rem;
   font-weight: bold;
@@ -551,42 +542,33 @@ li > a a:hover {
   color: #A1A194;
 }
 
-/* line 319, scss/main.css */
+/* line 312, scss/main.css */
 .info-section .info-item .info-box .icon {
   font-size: 4rem;
   color: #A1A194;
   padding: 2.5rem;
 }
 
-/* line 323, scss/main.css */
+/* line 316, scss/main.css */
 .info-section .info-item .info-box .icon i {
   font-size: 50px;
 }
 
-/* line 326, scss/main.css */
-.milky_way {
-  width: 1280px;
-  height: 100px;
-  background-image: url(../images/universe.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* line 333, scss/main.css */
+/* line 319, scss/main.css */
 .about_me {
   font-size: 1.3rem;
   background-color: #f9dba5;
   padding: 100px 0;
 }
 
-/* line 337, scss/main.css */
+/* line 323, scss/main.css */
 .about_me .container_me {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
 
-/* line 341, scss/main.css */
+/* line 327, scss/main.css */
 .about_me .container_me .author_pic {
   max-width: 30%;
   width: 336px;
@@ -596,70 +578,70 @@ li > a a:hover {
   background-size: cover;
 }
 
-/* line 348, scss/main.css */
+/* line 334, scss/main.css */
 .about_me .container_me .author_description {
   width: 50%;
 }
 
-/* line 350, scss/main.css */
+/* line 336, scss/main.css */
 .about_me .container_me .author_description h3 {
   font-size: 1.9rem;
   font-weight: 500;
   margin-bottom: 0.75em;
 }
 
-/* line 354, scss/main.css */
+/* line 340, scss/main.css */
 .about_me .container_me .author_description p {
   overflow: hidden;
   font-weight: 500;
 }
 
-/* line 358, scss/main.css */
+/* line 344, scss/main.css */
 footer {
   background-color: #5B605F;
   color: white;
 }
 
-/* line 361, scss/main.css */
+/* line 347, scss/main.css */
 footer h3 {
   margin-bottom: 15px;
   font-weight: 400;
 }
 
-/* line 364, scss/main.css */
+/* line 350, scss/main.css */
 footer div:first-child {
   justify-content: space-evenly;
 }
 
-/* line 367, scss/main.css */
+/* line 353, scss/main.css */
 .footerElements {
   padding: 30px;
   width: 250px;
   font-size: 15px;
 }
 
-/* line 371, scss/main.css */
+/* line 357, scss/main.css */
 .footerElements input {
   width: 100px;
   height: 25px;
 }
 
-/* line 374, scss/main.css */
+/* line 360, scss/main.css */
 .footerElements button {
   padding: 5px;
 }
 
-/* line 377, scss/main.css */
+/* line 363, scss/main.css */
 .socialMedia {
   font-size: 30px;
 }
 
-/* line 379, scss/main.css */
+/* line 365, scss/main.css */
 .socialMedia i {
   padding: 25px 25px 0 0;
 }
 
-/* line 382, scss/main.css */
+/* line 368, scss/main.css */
 .ender {
   font-size: 0.9em;
   padding: 10px 0;
@@ -668,12 +650,12 @@ footer div:first-child {
   text-align: center;
 }
 
-/* line 388, scss/main.css */
+/* line 374, scss/main.css */
 .ender span {
   color: gold;
 }
 
-/* line 391, scss/main.css */
+/* line 377, scss/main.css */
 .animation {
   background-color: #000;
   color: #fff;
@@ -685,18 +667,16 @@ footer div:first-child {
   position: relative;
 }
 
-/* line 401, scss/main.css */
+/* line 387, scss/main.css */
 canvas {
   position: relative;
   top: 0;
   left: 0;
 }
 
-/* line 406, scss/main.css */
+/* line 392, scss/main.css */
 .terrain {
   position: absolute;
   bottom: 0;
 }
-
-/* line 410, scss/main.css */
 

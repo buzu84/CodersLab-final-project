@@ -149,8 +149,6 @@ const MeteorShower = () => {
       requestAnimationFrame(animate);
     }
     animate();
-
-
   }, []);
 
 
@@ -158,8 +156,7 @@ const MeteorShower = () => {
     <div className="animation container">
       <canvas id="bgCanvas"></canvas>
       <canvas className="terrain" id="terCanvas"></canvas>
-  </div>
-
+    </div>
   );
 }
 

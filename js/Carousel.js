@@ -1,7 +1,35 @@
-import React from "react";
+import React, {  useEffect } from "react";
 import ReactDOM from "react-dom";
 
 const Carousel = () => {
+  useEffect(() => {
+    const next = document.querySelector(".rightarrow");
+    const prev = document.querySelector(".leftarrow");
+    const tablicali = document.querySelector(".carusel-content").querySelectorAll( "ul li");
+    let indexli = 0;
+
+
+    next.addEventListener("click", function() {
+
+        tablicali[indexli].classList.remove("visible")
+        if (indexli >= tablicali.length-1) {
+            indexli =0;
+        } else {
+            indexli +=1;
+        }
+        tablicali[indexli].classList.toggle("visible")
+    })
+    prev.addEventListener("click", function() {
+
+        tablicali[indexli].classList.remove("visible")
+        if (indexli <= 0) {
+            indexli = tablicali.length-1
+        }    else {
+            indexli -= 1;
+        }
+        tablicali[indexli].classList.toggle("visible")
+    })
+  }, []);
   return (
     <section className="carusel container ">
       <div className="carusel-content pl-30 pr-30">

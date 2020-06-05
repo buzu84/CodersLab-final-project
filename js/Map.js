@@ -6,18 +6,18 @@ import {
   Marker,
   InfoWindow
 } from "react-google-maps";
-// import * as parkData from "./data/skateboard-parks.json";
+// import * as spotsData from "../data/spots.json";
 import mapStyles from "./mapStyles";
 
 function Map() {
-  const [selectedPark, setSelectedPark] = useState(null);
+  const [selectedSpot, setSelectedSpot] = useState(null);
   const [lat, setLat] = useState(50.064651);
   const [lng, setLng] = useState(19.944981);
 
   useEffect(() => {
     const listener = e => {
       if (e.key === "Escape") {
-        setSelectedPark(null);
+        setSelectedSpot(null);
       }
     };
     window.addEventListener("keydown", listener);
@@ -31,9 +31,6 @@ function Map() {
     navigator.geolocation.getCurrentPosition(function(position) {
       setLat(position.coords.latitude);
       setLng(position.coords.longitude);
-      console.log("API: ", process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
-      console.log("Latitude is :", position.coords.latitude);
-      console.log("Longitude is :", position.coords.longitude);
     });
   }, []);
 
@@ -93,15 +90,16 @@ function Map() {
 const MapWrapped = withScriptjs(withGoogleMap(Map));
 
 export default function FinalMap() {
-  console.log(process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
-      <MapWrapped
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`}
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `100%` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-      />
+    <div className="map_cont">
+      <div className="map_container" style={{ width: "80vw", height: "80vh" }}>
+        <MapWrapped
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`}
+          loadingElement={<div style={{ height: `100%` }} />}
+          containerElement={<div style={{ height: `100%` }} />}
+          mapElement={<div style={{ height: `100%` }} />}
+        />
+      </div>
     </div>
   );
 }

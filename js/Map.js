@@ -91,9 +91,10 @@ const MapWrapped = withScriptjs(withGoogleMap(Map));
 
 export default function FinalMap() {
   return (
-    <div className="map_cont">
-      <div className="map_container" style={{ width: "80vw", height: "80vh" }}>
+    <div>
+      <div className="map_container" style={{ width: "1300px", height: "80vh" }}>
         <MapWrapped
+          className="map_cont"
           googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`}
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `100%` }} />}

@@ -1,9 +1,12 @@
-.app_pic {
-  height: 300px;
-  width: 100vw;
-  background: #1f1f29;
-  background-image: url(../images/New-Header.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top;
-}
+.app-logo {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background: #009273;
+    font-size: 4rem;
+    span{
+        color:white;
+    }
+    span:nth-last-child(1){
+        color:$logoColor;
+    }
+

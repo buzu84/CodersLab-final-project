@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Menu = () => {
   return (
-    <header className="header container" id="cont">
+    <header className="header container">
       <h1 className="logo"><span>Astro</span><span>Labium</span></h1>
       <nav>
         <ul>

@@ -59,603 +59,6 @@ body {
 }
 
 /* line 39, scss/main.css */
-.logo {
-  font-family: 'Dancing Script', cursive;
-  background-image: url(../images/logo2.jpeg);
-  border-radius: 5%;
-}
-
-/* line 43, scss/main.css */
-.logo span {
-  color: white;
-}
-
-/* line 45, scss/main.css */
-.logo span:nth-last-child(1) {
-  color: gold;
-}
-
-/* line 48, scss/main.css */
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 80px;
-  width: 100%;
-  background: #231854;
-}
-
-/* line 56, scss/main.css */
-nav > ul > li {
-  display: inline;
-  padding: 0 40px;
-}
-
-/* line 59, scss/main.css */
-nav > ul > li :hover {
-  opacity: 80%;
-}
-
-/* line 62, scss/main.css */
-li > a {
-  text-decoration: none;
-  color: white;
-}
-
-/* line 65, scss/main.css */
-li > a a:hover {
-  opacity: 80%;
-}
-
-/* line 68, scss/main.css */
-.nav_diff {
-  color: gold;
-}
-
-/* line 71, scss/main.css */
-.carusel {
-  padding: 100px 0;
-  background-color: #f9dba5;
-}
-
-/* line 75, scss/main.css */
-.carusel-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-/* line 80, scss/main.css */
-.carusel-content i {
-  display: inline-block;
-  padding: 10px;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* line 85, scss/main.css */
-.carusel-content i:hover {
-  color: grey;
-}
-
-/* line 87, scss/main.css */
-.carusel-content ul {
-  padding: 0 20px;
-  list-style: none;
-  width: 60%;
-}
-
-/* line 91, scss/main.css */
-.carusel-content li {
-  font-size: 1.5rem;
-  display: none;
-  text-align: center;
-}
-
-/* line 95, scss/main.css */
-.carusel-content li h1 {
-  font-size: 2rem;
-}
-
-/* line 97, scss/main.css */
-.carusel-content .visible {
-  display: block;
-}
-
-/* line 100, scss/main.css */
-.calltoaction {
-  width: 100%;
-  background: #063164;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* line 107, scss/main.css */
-.calltoaction div {
-  padding: 40px 0;
-  width: 60%;
-}
-
-/* line 110, scss/main.css */
-.calltoaction div h2 {
-  font-size: 26px;
-  font-weight: 300;
-  padding-bottom: 10px;
-}
-
-/* line 114, scss/main.css */
-.calltoaction div p {
-  font-size: 1rem;
-}
-
-/* line 116, scss/main.css */
-.calltoaction button {
-  font-family: 'Dancing Script', cursive;
-  color: gold;
-  width: 200px;
-  height: 55px;
-  border-radius: 10%;
-  background: #1f1f29;
-  font-size: 1.5rem;
-}
-
-/* line 125, scss/main.css */
-.info-section {
-  color: #063164;
-  background: #f9dba5;
-}
-
-/* line 128, scss/main.css */
-.info-section .info-item {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* line 131, scss/main.css */
-.info-section .info-item .info-box {
-  text-align: center;
-  width: 20rem;
-}
-
-/* line 134, scss/main.css */
-.info-section .info-item .info-box h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* line 138, scss/main.css */
-.info-section .info-item .info-box p {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-  color: #A1A194;
-}
-
-/* line 143, scss/main.css */
-.info-section .info-item .info-box .icon {
-  font-size: 4rem;
-  color: #A1A194;
-  padding: 2.5rem;
-}
-
-/* line 147, scss/main.css */
-.info-section .info-item .info-box .icon i {
-  font-size: 50px;
-}
-
-/* line 150, scss/main.css */
-.about_me {
-  font-size: 1.3rem;
-  background-color: #f9dba5;
-  padding: 100px 0;
-}
-
-/* line 154, scss/main.css */
-.about_me .container_me {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-/* line 158, scss/main.css */
-.about_me .container_me .author_pic {
-  max-width: 30%;
-  width: 336px;
-  height: 336px;
-  background-image: url(../images/draconids.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* line 165, scss/main.css */
-.about_me .container_me .author_description {
-  width: 50%;
-}
-
-/* line 167, scss/main.css */
-.about_me .container_me .author_description h3 {
-  font-size: 1.9rem;
-  font-weight: 500;
-  margin-bottom: 0.75em;
-}
-
-/* line 171, scss/main.css */
-.about_me .container_me .author_description p {
-  overflow: hidden;
-  font-weight: 500;
-}
-
-/* line 175, scss/main.css */
-footer {
-  background-color: #5B605F;
-  color: white;
-}
-
-/* line 178, scss/main.css */
-footer h3 {
-  margin-bottom: 15px;
-  font-weight: 400;
-}
-
-/* line 181, scss/main.css */
-footer div:first-child {
-  justify-content: space-evenly;
-}
-
-/* line 184, scss/main.css */
-.footerElements {
-  padding: 30px;
-  width: 250px;
-  font-size: 15px;
-}
-
-/* line 188, scss/main.css */
-.footerElements input {
-  width: 100px;
-  height: 25px;
-}
-
-/* line 191, scss/main.css */
-.footerElements button {
-  padding: 5px;
-}
-
-/* line 194, scss/main.css */
-.socialMedia {
-  font-size: 30px;
-}
-
-/* line 196, scss/main.css */
-.socialMedia i {
-  padding: 25px 25px 0 0;
-}
-
-/* line 199, scss/main.css */
-.ender {
-  font-size: 0.9em;
-  padding: 10px 0;
-  background-color: #063164;
-  color: white;
-  text-align: center;
-}
-
-/* line 205, scss/main.css */
-.ender span {
-  color: gold;
-}
-
-
-.app-logo {
-  font-family: 'Dancing Script', cursive;
-  text-align: center;
-  background: #009273;
-  font-size: 4rem;
-}
-
-/* line 220, scss/main.css */
-.app-logo span {
-  color: white;
-}
-
-/* line 222, scss/main.css */
-.app-logo span:nth-last-child(1) {
-  color: gold;
-  
-
-.logo {
-  font-family: 'Dancing Script', cursive;
-  background-image: url(../images/logo2.jpeg);
-  border-radius: 5%;
-}
-
-/* line 212, scss/main.css */
-.logo span {
-  color: white;
-}
-
-/* line 214, scss/main.css */
-.logo span:nth-last-child(1) {
-  color: gold;
-}
-
-/* line 217, scss/main.css */
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 80px;
-  width: 100%;
-  background: #231854;
-}
-
-/* line 225, scss/main.css */
-nav > ul > li {
-  display: inline;
-  padding: 0 40px;
-}
-
-/* line 228, scss/main.css */
-nav > ul > li :hover {
-  opacity: 80%;
-}
-
-/* line 231, scss/main.css */
-li > a {
-  text-decoration: none;
-  color: white;
-}
-
-/* line 234, scss/main.css */
-li > a a:hover {
-  opacity: 80%;
-}
-
-/* line 237, scss/main.css */
-.nav_diff {
-  color: gold;
-}
-
-/* line 240, scss/main.css */
-.carusel {
-  padding: 100px 0;
-  background-color: #f9dba5;
-}
-
-/* line 244, scss/main.css */
-.carusel-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-/* line 249, scss/main.css */
-.carusel-content i {
-  display: inline-block;
-  padding: 10px;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* line 254, scss/main.css */
-.carusel-content i:hover {
-  color: grey;
-}
-
-/* line 256, scss/main.css */
-.carusel-content ul {
-  padding: 0 20px;
-  list-style: none;
-  width: 60%;
-}
-
-/* line 260, scss/main.css */
-.carusel-content li {
-  font-size: 1.5rem;
-  display: none;
-  text-align: center;
-}
-
-/* line 264, scss/main.css */
-.carusel-content li h1 {
-  font-size: 2rem;
-}
-
-/* line 266, scss/main.css */
-.carusel-content .visible {
-  display: block;
-}
-
-/* line 269, scss/main.css */
-.calltoaction {
-  width: 100%;
-  background: #063164;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* line 276, scss/main.css */
-.calltoaction div {
-  padding: 40px 0;
-  width: 60%;
-}
-
-/* line 279, scss/main.css */
-.calltoaction div h2 {
-  font-size: 26px;
-  font-weight: 300;
-  padding-bottom: 10px;
-}
-
-/* line 283, scss/main.css */
-.calltoaction div p {
-  font-size: 1rem;
-}
-
-/* line 285, scss/main.css */
-.calltoaction button {
-  font-family: 'Dancing Script', cursive;
-  color: gold;
-  width: 200px;
-  height: 55px;
-  border-radius: 10%;
-  background: #1f1f29;
-  font-size: 1.5rem;
-}
-
-/* line 294, scss/main.css */
-.info-section {
-  color: #063164;
-  background: #f9dba5;
-}
-
-/* line 297, scss/main.css */
-.info-section .info-item {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* line 300, scss/main.css */
-.info-section .info-item .info-box {
-  text-align: center;
-  width: 20rem;
-}
-
-/* line 303, scss/main.css */
-.info-section .info-item .info-box h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* line 307, scss/main.css */
-.info-section .info-item .info-box p {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-  color: #A1A194;
-}
-
-/* line 312, scss/main.css */
-.info-section .info-item .info-box .icon {
-  font-size: 4rem;
-  color: #A1A194;
-  padding: 2.5rem;
-}
-
-/* line 316, scss/main.css */
-.info-section .info-item .info-box .icon i {
-  font-size: 50px;
-}
-
-/* line 319, scss/main.css */
-.about_me {
-  font-size: 1.3rem;
-  background-color: #f9dba5;
-  padding: 100px 0;
-}
-
-/* line 323, scss/main.css */
-.about_me .container_me {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-/* line 327, scss/main.css */
-.about_me .container_me .author_pic {
-  max-width: 30%;
-  width: 336px;
-  height: 336px;
-  background-image: url(../images/draconids.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* line 334, scss/main.css */
-.about_me .container_me .author_description {
-  width: 50%;
-}
-
-/* line 336, scss/main.css */
-.about_me .container_me .author_description h3 {
-  font-size: 1.9rem;
-  font-weight: 500;
-  margin-bottom: 0.75em;
-}
-
-/* line 340, scss/main.css */
-.about_me .container_me .author_description p {
-  overflow: hidden;
-  font-weight: 500;
-}
-
-/* line 344, scss/main.css */
-footer {
-  background-color: #5B605F;
-  color: white;
-}
-
-/* line 347, scss/main.css */
-footer h3 {
-  margin-bottom: 15px;
-  font-weight: 400;
-}
-
-/* line 350, scss/main.css */
-footer div:first-child {
-  justify-content: space-evenly;
-}
-
-/* line 353, scss/main.css */
-.footerElements {
-  padding: 30px;
-  width: 250px;
-  font-size: 15px;
-}
-
-/* line 357, scss/main.css */
-.footerElements input {
-  width: 100px;
-  height: 25px;
-}
-
-/* line 360, scss/main.css */
-.footerElements button {
-  padding: 5px;
-}
-
-/* line 363, scss/main.css */
-.socialMedia {
-  font-size: 30px;
-}
-
-/* line 365, scss/main.css */
-.socialMedia i {
-  padding: 25px 25px 0 0;
-}
-
-/* line 368, scss/main.css */
-.ender {
-  font-size: 0.9em;
-  padding: 10px 0;
-  background-color: #063164;
-  color: white;
-  text-align: center;
-}
-
-/* line 374, scss/main.css */
-.ender span {
-  color: gold;
-}
-
-/* line 377, scss/main.css */
 .animation {
   background-color: #000;
   color: #fff;
@@ -667,16 +70,323 @@ footer div:first-child {
   position: relative;
 }
 
-/* line 387, scss/main.css */
+/* line 49, scss/main.css */
 canvas {
   position: relative;
   top: 0;
   left: 0;
 }
 
-/* line 392, scss/main.css */
+/* line 54, scss/main.css */
 .terrain {
   position: absolute;
   bottom: 0;
 }
 
+/* line 58, scss/main.css */
+.logo {
+  font-family: 'Dancing Script', cursive;
+  background-image: url(../images/logo2.jpeg);
+  border-radius: 5%;
+}
+
+/* line 62, scss/main.css */
+.logo span {
+  color: white;
+}
+
+/* line 64, scss/main.css */
+.logo span:nth-last-child(1) {
+  color: gold;
+}
+
+/* line 67, scss/main.css */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background: #231854;
+}
+
+/* line 75, scss/main.css */
+nav > ul > li {
+  display: inline;
+  padding: 0 40px;
+}
+
+/* line 78, scss/main.css */
+nav > ul > li :hover {
+  opacity: 80%;
+}
+
+/* line 81, scss/main.css */
+li > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 84, scss/main.css */
+li > a a:hover {
+  opacity: 80%;
+}
+
+/* line 87, scss/main.css */
+.nav_diff {
+  color: gold;
+}
+
+/* line 90, scss/main.css */
+.carusel {
+  padding: 100px 0;
+  background-color: #f9dba5;
+}
+
+/* line 94, scss/main.css */
+.carusel-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 99, scss/main.css */
+.carusel-content i {
+  display: inline-block;
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* line 104, scss/main.css */
+.carusel-content i:hover {
+  color: grey;
+}
+
+/* line 106, scss/main.css */
+.carusel-content ul {
+  padding: 0 20px;
+  list-style: none;
+  width: 60%;
+}
+
+/* line 110, scss/main.css */
+.carusel-content li {
+  font-size: 1.5rem;
+  display: none;
+  text-align: center;
+}
+
+/* line 114, scss/main.css */
+.carusel-content li h1 {
+  font-size: 2rem;
+}
+
+/* line 116, scss/main.css */
+.carusel-content .visible {
+  display: block;
+}
+
+/* line 119, scss/main.css */
+.calltoaction {
+  width: 100%;
+  background: #063164;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 126, scss/main.css */
+.calltoaction div {
+  padding: 40px 0;
+  width: 60%;
+}
+
+/* line 129, scss/main.css */
+.calltoaction div h2 {
+  font-size: 26px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+/* line 133, scss/main.css */
+.calltoaction div p {
+  font-size: 1rem;
+}
+
+/* line 135, scss/main.css */
+.calltoaction button {
+  font-family: 'Dancing Script', cursive;
+  color: gold;
+  width: 200px;
+  height: 55px;
+  border-radius: 10%;
+  background: #1f1f29;
+  font-size: 1.5rem;
+}
+
+/* line 144, scss/main.css */
+.info-section {
+  color: #063164;
+  background: #f9dba5;
+}
+
+/* line 147, scss/main.css */
+.info-section .info-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 150, scss/main.css */
+.info-section .info-item .info-box {
+  text-align: center;
+  width: 20rem;
+}
+
+/* line 153, scss/main.css */
+.info-section .info-item .info-box h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* line 157, scss/main.css */
+.info-section .info-item .info-box p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #A1A194;
+}
+
+/* line 162, scss/main.css */
+.info-section .info-item .info-box .icon {
+  font-size: 4rem;
+  color: #A1A194;
+  padding: 2.5rem;
+}
+
+/* line 166, scss/main.css */
+.info-section .info-item .info-box .icon i {
+  font-size: 50px;
+}
+
+/* line 169, scss/main.css */
+.about_me {
+  font-size: 1.3rem;
+  background-color: #f9dba5;
+  padding: 100px 0;
+}
+
+/* line 173, scss/main.css */
+.about_me .container_me {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/* line 177, scss/main.css */
+.about_me .container_me .author_pic {
+  max-width: 30%;
+  width: 336px;
+  height: 336px;
+  background-image: url(../images/draconids.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 184, scss/main.css */
+.about_me .container_me .author_description {
+  width: 50%;
+}
+
+/* line 186, scss/main.css */
+.about_me .container_me .author_description h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 0.75em;
+}
+
+/* line 190, scss/main.css */
+.about_me .container_me .author_description p {
+  overflow: hidden;
+  font-weight: 500;
+}
+
+/* line 194, scss/main.css */
+footer {
+  background-color: #5B605F;
+  color: white;
+}
+
+/* line 197, scss/main.css */
+footer h3 {
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+/* line 200, scss/main.css */
+footer div:first-child {
+  justify-content: space-evenly;
+}
+
+/* line 203, scss/main.css */
+.footerElements {
+  padding: 30px;
+  width: 250px;
+  font-size: 15px;
+}
+
+/* line 207, scss/main.css */
+.footerElements input {
+  width: 100px;
+  height: 25px;
+}
+
+/* line 210, scss/main.css */
+.footerElements button {
+  padding: 5px;
+}
+
+/* line 213, scss/main.css */
+.socialMedia {
+  font-size: 30px;
+}
+
+/* line 215, scss/main.css */
+.socialMedia i {
+  padding: 25px 25px 0 0;
+}
+
+/* line 218, scss/main.css */
+.ender {
+  font-size: 0.9em;
+  padding: 10px 0;
+  background-color: #063164;
+  color: white;
+  text-align: center;
+}
+
+/* line 224, scss/main.css */
+.ender span {
+  color: gold;
+}
+
+/* line 227, scss/main.css */
+.app-logo {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  background: #009273;
+  font-size: 4rem;
+}
+
+/* line 232, scss/main.css */
+.app-logo span {
+  color: white;
+}
+
+/* line 234, scss/main.css */
+.app-logo span:nth-last-child(1) {
+  color: gold;
+}

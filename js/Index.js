@@ -7,12 +7,14 @@ import CallToAction from './CallToAction';
 import Features from './Features';
 import About from './About';
 import Footer from './Footer';
+import MeteorShower from './MeteorShower';
 
 
 export default () => {
     return (
       <>
         <Menu />
+        <MeteorShower />
         <Carousel />
         <CallToAction />
         <Features />

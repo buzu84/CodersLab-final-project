@@ -257,13 +257,13 @@ li > a a:hover {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 3rem;
-  color: #A1A194;
+  color: #231854;
 }
 
 /* line 162, scss/main.css */
 .info-section .info-item .info-box .icon {
   font-size: 4rem;
-  color: #A1A194;
+  color: #231854;
   padding: 2.5rem;
 }
 
@@ -316,7 +316,7 @@ li > a a:hover {
 
 /* line 194, scss/main.css */
 footer {
-  background-color: #5B605F;
+  background-color: #231854;
   color: white;
 }
 

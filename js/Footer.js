@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 
-const Footer = () => {
+const Footer = props => {
   return (
-    <footer id="contact" className="container">
+    <footer ref={props.propRefContact} className="container">
       <div className="flexbox">
         <div className="footerElements"><h3>Lorem ipsum dolor sit.</h3><p>Consectetur adipiscing elit. Sed at bibendum nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> </div>
         <div className="footerElements">

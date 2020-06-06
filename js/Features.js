@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 
-const Features = () => {
+const Features = (props) => {
   return (
-    <section id="worth_it" className="info-section container pl-30 pr-30">
+    <section ref={props.propRefFeatures} className="info-section container pl-30 pr-30">
       <div className="info-item">
         <div className="info-box">
           <div className="icon"><i className="fas fa-check"></i></div>

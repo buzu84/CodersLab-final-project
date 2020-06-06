@@ -6,7 +6,7 @@ import {
   Marker,
   InfoWindow
 } from "react-google-maps";
-// import * as spotsData from "../data/spots.json";
+import * as spotsData from "../data/spots.json";
 import mapStyles from "./mapStyles";
 
 function Map() {
@@ -36,54 +36,50 @@ function Map() {
 
   return (
     <>
-    <GoogleMap
-      defaultZoom={10}
-      center={{ lat, lng }}
-      defaultOptions={{ styles: mapStyles }}
-    />
-    <Marker
-      position={{
-        lat: lat,
-        lng: lng
-      }}
+      <GoogleMap
+        defaultZoom={10}
+        center={{ lat, lng }}
+        defaultOptions={{ styles: mapStyles }}
       />
+        <Marker
+          position={{
+            lat: lat,
+            lng: lng
+          }}
+          />
+        {spotsData.spots.map(spot => (
+          <Marker
+            key={spot.id}
+            position={{
+              lat: parseFloat(spot.lat),
+              lng: parseFloat(spot.lng)
+            }}
+            onClick={() => {
+              setSelectedSpot(spot);
+            }}
+            icon={{
+              url: `/favicon-16x16.png`,
+              scaledSize: new window.google.maps.Size(25, 25)
+            }}
+          />
+        ))}
+        {selectedSpot && (
+          <InfoWindow
+            onCloseClick={() => {
+              setSelectedSpot(null);
+            }}
+            position={{
+              lat: parseFloat(selectedSpot.lat),
+              lng: parseFloat(selectedSpot.lng)
+            }}
+          >
+            <div>
+              <h2>{selectedSpot.name}</h2>
+              <p>{selectedSpot.description}</p>
+            </div>
+          </InfoWindow>
+        )}
       </>
-      // {spotsData.features.map(park => (
-      //   <Marker
-      //     key={park.properties.PARK_ID}
-      //     position={{
-      //       lat: park.geometry.coordinates[1],
-      //       lng: park.geometry.coordinates[0]
-      //     }}
-      //     onClick={() => {
-      //       setSelectedPark(park);
-      //     }}
-      //     icon={{
-      //       url: `/skateboarding.svg`,
-      //       scaledSize: new window.google.maps.Size(25, 25)
-      //     }}
-      //   />
-      // ))}
-
-      // {selectedPark && (
-      //   <InfoWindow
-      //     onCloseClick={() => {
-      //       setSelectedPark(null);
-      //     }}
-      //     position={{
-      //       lat: selectedPark.geometry.coordinates[1],
-      //       lng: selectedPark.geometry.coordinates[0]
-      //     }}
-      //   >
-      //     <div>
-      //       <h2>{selectedPark.properties.NAME}</h2>
-      //       <p>{selectedPark.properties.DESCRIPTIO}</p>
-      //     </div>
-      //   </InfoWindow>
-      // )}
-
-
-
   );
 }
 

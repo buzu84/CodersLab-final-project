@@ -1,139 +1,21 @@
 {
-  "cars": [
+  "spots": [
     {
       "id": 1,
-      "name": "Gallardo",
-      "brand": "Lamborghini",
-      "engine": {
-        "type": "petrol",
-        "hp": 562
-      }
+      "name": "Banica",
+      "type": "spot",
+      "lat": "49.53277778",
+      "lng": "21.30861111",
+      "description": "Miejsce wręcz idealne na szybkie wypady obserwacyjne. Dojazd caly czas asfaltem od Gorlic. Praktycznie juz od Pętnej jedziemy caly czas pod gorke(okolo 19 km). Dojeżdzając do skrzyżowania drogi na Wołowiec oraz Jasionke zatrzymujemy sie. Miejsce do obserwacji to dość duża polanka za rozjazdem dróg(wysokość około 614 m.n.p.m). Połnocne niebo nieco przysłaniają nam dwie wyższe górki ok. 20 stopni, reszta nieboskłonu widoczna juz od około 10 stopni. Jakies 600-700 metrów dalej znajduje sie agroturystyka Gościniec Banica. Tak ze spokojnie można sobie nawet weekend zaplanowac pod pieknym niebem. Ogolnie dużo szlaków rowerowych oraz pieszych. Malym minusem jest fakt, ze polanka znaduje się blisko drogi asfaltowej i czasami (choć rzadko) przejezdna czasami tędy samochod, a jak wiadomo my nie lubimy sztucznych świateł, ale wyjsciem z problemu zaszycie się troche dalej na polanie."
     },
     {
       "id": 2,
-      "name": "Model S",
-      "brand": "Tesla",
-      "engine": {
-        "type": "electric",
-        "hp": 760
-      }
-    },
-    {
-      "id": 3,
-      "name": "Polonez Caro",
-      "brand": "Daewoo",
-      "engine": {
-        "type": "petrol",
-        "hp": 84
-      }
-    },
-    {
-      "id": 4,
-      "name": "i3",
-      "brand": "BMW",
-      "engine": {
-        "type": "electric",
-        "hp": 170
-      }
-    },
-    {
-      "id": 5,
-      "name": "X6 M",
-      "brand": "BMW",
-      "engine": {
-        "type": "petrol",
-        "hp": 575
-      }
-    },
-    {
-      "id": 6,
-      "name": "Matiz",
-      "brand": "Daewoo",
-      "engine": {
-        "type": "petrol",
-        "hp": 84
-      }
-    },
-    {
-      "id": 7,
-      "name": "Matiz",
-      "brand": "Daewoo",
-      "engine": {
-        "type": "petrol",
-        "hp": 64
-      }
-    },
-    {
-      "id": 8,
-      "name": "XF",
-      "brand": "Jaguar",
-      "engine": {
-        "type": "petrol",
-        "hp": 520
-      }
-    },
-    {
-      "id": 9,
-      "name": "RX-7",
-      "brand": "Mazda",
-      "engine": {
-        "type": "petrol",
-        "hp": 280
-      }
-    },
-    {
-      "id": 10,
-      "name": "Model 3",
-      "brand": "Tesla",
-      "engine": {
-        "type": "electric",
-        "hp": 300
-      }
-    },
-    {
-      "id": 11,
-      "name": "Celica",
-      "brand": "Toyota",
-      "engine": {
-        "type": "petrol",
-        "hp": 120
-      }
-    },
-    {
-      "id": 12,
-      "name": "Tico",
-      "brand": "Daewoo",
-      "engine": {
-        "type": "petrol",
-        "hp": 41
-      }
-    },
-    {
-      "id": 13,
-      "name": "Roadster",
-      "brand": "Tesla",
-      "engine": {
-        "type": "electric",
-        "hp": 288
-      }
-    },
-    {
-      "id": 14,
-      "name": "Supra",
-      "brand": "Toyota",
-      "engine": {
-        "type": "petrol",
-        "hp": 276
-      }
-    },
-    {
-      "id": 15,
-      "name": "i8",
-      "brand": "BMW",
-      "engine": {
-        "type": "hybrid",
-        "hp": 362
-      }
+      "name": "Radocyna",
+      "type": "spot",
+      "lat": "49.46777778",
+      "lng": "21.37305556",
+      "description": "Niebo zdecydowanie ciemniejsze, dojazd niestety gorszy (droga od Krzywej szutrowa). Sama Radocyna znajduje sie na wysokość około 514 m.n.p.m. Tutaj to już praktycznie przeszkadzać w nocy może nam jakaś sowa, chociaż czasem może jakiś samochod pojawić się który jedzie własnie do Schroniska Nadleśnictwa. Miejsce co jest praktycznie ostatnim miejscem na mapie w tej okolicy. W samej Radocynie pozostaly dwa budynki, Schronisko Nadleśnictwa oraz samo Nadleśnictwo."
     }
+
   ]
 }

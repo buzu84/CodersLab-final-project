@@ -32,13 +32,13 @@ function Map() {
       setLat(position.coords.latitude);
       setLng(position.coords.longitude);
     });
-  }, []);
+  }, [lat,lng]);
 
   return (
     <>
     <GoogleMap
       defaultZoom={10}
-      defaultCenter={{ lat: lat, lng: lng }}
+      center={{ lat, lng }}
       defaultOptions={{ styles: mapStyles }}
     />
     <Marker
@@ -48,7 +48,7 @@ function Map() {
       }}
       />
       </>
-      // {parkData.features.map(park => (
+      // {spotsData.features.map(park => (
       //   <Marker
       //     key={park.properties.PARK_ID}
       //     position={{

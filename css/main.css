@@ -391,3 +391,11 @@ footer div:first-child {
 .app-logo span:nth-last-child(1) {
   color: gold;
 }
+
+/* line 238, scss/main.css */
+.map_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #009273;
+}

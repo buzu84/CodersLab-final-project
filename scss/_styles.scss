@@ -30,7 +30,8 @@ nav > ul > li {
 li > a {
    text-decoration: none;
    color: white;
-   a:hover{
+   cursor: pointer;
+   a:hover {
      opacity: 80%;
    }
  }
@@ -111,7 +112,7 @@ li > a {
 .info-section {
   color: $headingAndColumns;
   background: $backgroundScreens;
-  
+
   .info-item {
     display: flex;
     justify-content: space-around;

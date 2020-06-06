@@ -12,9 +12,6 @@ import Astro from './Astro';
 
 class App extends Component {
   render() {
-    const activeStyle = {
-        border: "2px solid green"
-    };
     return (
       <HashRouter>
         <div>

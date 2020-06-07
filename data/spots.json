@@ -23,8 +23,119 @@
       "lat": 49.45972222,
       "lng": 21.40166667,
       "description": "Miejsce dla koogoś kto by chciał sie zajać astrofoto. Miejsce odlegle od samej Radocyny-około 2 km dalej. Ale znajduje się zdecydowanie wyżej,  wysokość około 600 m.n.p.m, (a wiadomo co nam to daje). Osobiście miałem tylko raz przyjemność tam obserowac i zauważyłem, ze delikatny wiaterek który tam wieje pomaga w odraszaniu sprzętu. Generalnie cisza, spokoj i piekne niebo."
+    },
+    {
+      "id": 4,
+      "name": "Przełęcz Szklarska",
+      "type": "spot",
+      "lat": 49.48222222,
+      "lng": 21.80750000,
+      "description": "Łatwo tam dojechać z Krosna, które jest najbliższą większą miejscowością (50 000 mieszkańców, 22 km na północ w linii prostej). Horyzont nigdzie nie obcięty więcej niż o jakieś 5 stopni. Na północ w nieco mniejszej odległości znajdują się jeszcze inne kilkutysięczne miejscowości (Iwonicz, Iwonicz Zdrój, Rymanów), które dokładają się lekkiego pojaśnienia nieba na północy. Kilkaset metrów na zachód znajduje się jakaś stacja przekaźnikowa, na której szczycie świeci czerwona lampka. Niestety, w 2014 roku na stacji przekaźnikowej pojawiła się druga lampka, znacznie jaśniejsza od poprzedniej, która trochę przeszkadza w obserwacjach. Bardzo delikatne pojaśnienie nieba występuje również od strony południowej, wysokość około 600 m.n.p.m. Trzeba jednak zaznaczyć, że niebo jest jednak bardzo czarne - widziałem tam zarówno cienie od Wenus jak i przeciwblask."
+    },
+    {
+      "id": 5,
+      "name": "Ożenna",
+      "type": "spot",
+      "lat": 49.44388889,
+      "lng": 21.49083333,
+      "description": "Okolo 2 km od Ożennej, na zboczu góry Nad Tysowym,  wysokość 650 m.n.p.m. Jest to około 10 km na wschód od Radocyny. Miejsce jest niemalże idealne, ale dojazd do niego jest marny. Co więcej jest to w Magurskim Parku Narodowym, więc nie powinno się schodzić ze szlaku (drogi). Bardzo delikatnie rozświetlenie nieba widoczne tylko w kilku miejscach nad horyzontem - w kierunku Krosna (50 000 mieszkańców, 33 km w linii prostej), Bardejova (~30 000 mieszkańców i około 20 km w linii prostej), Jasła (40 000 mieszkańców i 33 km w linii prostej)."
+    },
+    {
+      "id": 6,
+      "name": "Tarnawa Duża",
+      "type": "spot",
+      "lat": 50.84277778,
+      "lng": 22.675,
+      "description": "Łąki wokół wioski znajdującej się około 50km na zachód od Zamościa i około 50km na południe od Lublina. Na horyzoncie miejscami drzewa, lekka łuna od północy od Wysokiego. W nocy wsie wyłączają latarnie przez co niebo wyczernia się do tego stopnia że jest to dobre miejsce do obserwacji zarówno wizualnych jak i przez teleskop. Struktury Drogi Mlecznej widoczne bez problemu, chmury gwiezdne w Strzelcu wyraźnie widoczne. M31 widoczna bez zerkania (zależy od mgły). Jedyną wadą jest spora wilgoć, która tworzy mgłę i rosę bez względu na porę roku"
+    },
+    {
+      "id": 7,
+      "name": "Szklarnia",
+      "type": "spot",
+      "lat": 50.64472222,
+      "lng": 22.405,
+      "description": "Miejscowość schowana jest w lasach Janowskich, w okolicy znajduje się trochę polan. Jako że prawie w każdą stronę mamy całe kilometry drzew LP jest ograniczone a Droga Mleczna widoczna jest całkiem nieźle. Nie jest to może idealne miejsce do obserwacji biorąc pod uwagę brak horyzontu jednak niebo jest ciemne i obiekty głębokiego nieba można oglądać bez problemu."
+    },
+    {
+      "id": 8,
+      "name": "Domasławice",
+      "type": "spot",
+      "lat": 54.39138889,
+      "lng": 16.43111111,
+      "description": "Niedaleko do morza i daleko od wszelkich latarni. Okoliczne wsie wyłączają światła uliczne po 22 dzięki czemu na niebie zarysowuje się naprawdę piękna Droga Mleczna. Obraz obiektów głębokiego nieba jest czysty a M31 widoczna bezpośrednio i zajmuje na niebie całkiem pokaźne rozmiary w porównaniu do tego co można zobaczyć na wsi za miastem. Jedyną wadą są lasery bijące po niebie z Darłowa/Darłówka, w okresie letnim, niebo jest już całkiem czarne i robi wrażenie."
+    },
+    {
+      "id": 9,
+      "name": "Dęby",
+      "type": "spot",
+      "lat": 50.5525,
+      "lng": 23.85194444,
+      "description": "Kawałek drogi od granicy z Ukrainą. Łuna na północny wschód od Lubyczy Królewskiej i malutkie łuny w każdym kierunku z małych wiosek i miejscowości. Mimo to, droga mleczna widoczna dobrze i można pokusić się o obserwacje DSów. Miejscówka nie jest może Ukraińskim niebem ale kandydat dobry. Jeżeli ktoś jest z okolicy to może podjechać i potwierdzić czy niebo nadaje się na listę, my prowadziliśmy tylko jedną obserwację."
+    },
+    {
+      "id": 10,
+      "name": "Osmolice",
+      "type": "spot",
+      "lat": 51.1775,
+      "lng": 22.78111111,
+      "description": "Jeżeli ktoś z Lublina chciałby pooglądać Drogę Mleczną i zapolować na obiekty głębokiego nieba a nie chce dalekich eskapad to po godzinie 23 w Osmolicach i okolicznych wsiach wyłączane są latarnie. Niebo nie jest wprawdzie czarne, a od Lublina (od północy) wciąż bije pomarańczowa łuna ale reszta nieba jest wolna od mocnego LP i można rozstawić się z teleskopem. Nie jest idealnie ale na początkowe zamiejskie obserwacje w sam raz."
+    },
+    {
+      "id": 11,
+      "name": "Biórków Mały",
+      "type": "spot",
+      "lat": 50.155,
+      "lng": 20.18805556,
+      "description": "Utwardzone miejsce obok śródpolnego krzyża. Bez problemu mieści się samochód i teleskop, ale czasem jest tam trochę błota. W ciemne przejrzyste wrześniowe noce o świcie całkiem ładnie widoczne światło zodiakalne. Na południowym zachodzie silna łuna od Krakowa. Na północnym wschodzie oddalona o kilkaset metrów stacja benzynowa, której światła trochę przeszkadzają w obserwacjach. Po 23:00 gasną latarnie uliczne w pobliskich miejscowościach, przez co niebo jest nieznacznie lepsze w drugiej połowie nocy."
+    },
+    {
+      "id": 12,
+      "name": "Czuszów/Bolowiec",
+      "type": "spot",
+      "lat": 50.155,
+      "lng": 20.18805556,
+      "description": "Dość szeroka, żwirowa droga (od jesieni 2015 już asfaltowa), którą sporadycznie coś przejeżdża (średnio trafia mi się tam 1 samochód na 2/3 sesje obserwacyjne). Od południowego zachodu dość mocna łuna od Krakowa (połączona z łunami od pobliskich Proszowic, Wieliczki i Niepołomic), a od zachodu nieco słabsza od Śląska. W drugiej połowie nocy, kiedy gasną latarnie w okolicznych miejscowościach, niebo jest zauważalnie lepsze niż wieczorem."
+    },
+    {
+      "id": 13,
+      "name": "Koskowa Góra",
+      "type": "spot",
+      "lat": 49.75805556,
+      "lng": 19.785,
+      "description": "Niebo ciemne, nieco lepsze niż na Polanie Kudłacze. Łuna od Krakowa dość spora. Całkiem niezły dojazd - drogą asfaltową (choć bardzo wąską) można dojechać w okolice kapliczki na przełęczy na wysokości 800 m.n.p.m. Na południowym zachodzie też niebo wyraźnie rozjaśnione. Na południowym wschodzie też niewielkie łuny (chyba od Nowego Targu i Mszany Dolnej). Horyzont odsłonięty, na północnym zachodzie obcięty na wysokości około 10 stopni, na południu na wysokości około 5 stopni. Na południowym wschodzie przy przejrzystym niebie o świcie widoczne Tatry. Jesienią warto tam pojechać w mgliste dni, bo miejsce to często znajduje się powyżej mgieł i niskich chmur."
+    },
+    {
+      "id": 14,
+      "name": "Przełęcz Marszałka Rydza-Śmigłego",
+      "type": "spot",
+      "lat": 49.68111111,
+      "lng": 20.28111111,
+      "description": "Doskonały dojazd asfaltową drogą, znacznie lepszy niż na Koskową Górę. Na miejscu niewielki plac obok pomnika. Śmiało zmieszczą się 2-3 samochody i 2-3 teleskopy. W razie czego w pobliżu powinno znaleźć się więcej miejsca. Północna część nieba zasłonięta dość wysoko przez drzewa. Południowy horyzont obcięty na wysokości nieco mniej niż 10 stopni. Południowa część nieba najciemniejsza. Na północy, wschodzie i zachodzie lekkie łuny. Na wschodzie w dużej odległości widoczne światła jakichś miejscowości, na tyle jednak daleko, że nie przeszkadza to w najmniejszym nawet stopniu. Niebo wydaje się być trochę lepsze niż na Koskowej Górze."
+    },
+    {
+      "id": 15,
+      "name": "Wilczyce",
+      "type": "spot",
+      "lat": 49.66777778,
+      "lng": 20.20166667,
+      "description": "Doskonały dojazd asfaltową drogą, znacznie lepszy niż na Koskową Górę. Na miejscu niewielki plac obok pomnika. Śmiało zmieszczą się 2-3 samochody i 2-3 teleskopy. W razie czego w pobliżu powinno znaleźć się więcej miejsca. Północna część nieba zasłonięta dość wysoko przez drzewa. Południowy horyzont obcięty na wysokości nieco mniej niż 10 stopni. Południowa część nieba najciemniejsza. Na północy, wschodzie i zachodzie lekkie łuny. Na wschodzie w dużej odległości widoczne światła jakichś miejscowości, na tyle jednak daleko, że nie przeszkadza to w najmniejszym nawet stopniu. Niebo wydaje się być trochę lepsze niż na Koskowej Górze."
+    },
+    {
+      "id": 16,
+      "name": "Suwalki",
+      "type": "spot",
+      "lat": 54.079965,
+      "lng": 22.867649,
+      "description": "Bardzo ciemne niebo, na tle Drogi Mlecznej można dostrzec ciemne mgławice. Na południowym-zachodzie mogą nieco przeszkadzać światła pochodzące od Poddubówka. Łuna miejska nie przeszkadza w większym stopniu. Zasięg gwiazdowy: +6.7 magnitudo."
+    },
+    {
+      "id": 17,
+      "name": "Trzebień",
+      "type": "spot",
+      "lat": 51.42361111,
+      "lng": 15.65138889,
+      "description": "Bardzo ciemne niebo, na tle Drogi Mlecznej można dostrzec ciemne mgławice. Na południowym-zachodzie mogą nieco przeszkadzać światła pochodzące od Poddubówka. Łuna miejska nie przeszkadza w większym stopniu. Zasięg gwiazdowy: +6.7 magnitudo."
     }
-
 
   ]
 }

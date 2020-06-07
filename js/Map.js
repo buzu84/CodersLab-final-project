@@ -51,8 +51,8 @@ function Map() {
           <Marker
             key={spot.id}
             position={{
-              lat: parseFloat(spot.lat),
-              lng: parseFloat(spot.lng)
+              lat: spot.lat,
+              lng: spot.lng
             }}
             onClick={() => {
               setSelectedSpot(spot);
@@ -69,8 +69,8 @@ function Map() {
               setSelectedSpot(null);
             }}
             position={{
-              lat: parseFloat(selectedSpot.lat),
-              lng: parseFloat(selectedSpot.lng)
+              lat: selectedSpot.lat,
+              lng: selectedSpot.lng
             }}
           >
             <div>

@@ -4,18 +4,27 @@
       "id": 1,
       "name": "Banica",
       "type": "spot",
-      "lat": "49.53277778",
-      "lng": "21.30861111",
+      "lat": 49.53277778,
+      "lng": 21.30861111,
       "description": "Miejsce wręcz idealne na szybkie wypady obserwacyjne. Dojazd caly czas asfaltem od Gorlic. Praktycznie juz od Pętnej jedziemy caly czas pod gorke(okolo 19 km). Dojeżdzając do skrzyżowania drogi na Wołowiec oraz Jasionke zatrzymujemy sie. Miejsce do obserwacji to dość duża polanka za rozjazdem dróg(wysokość około 614 m.n.p.m). Połnocne niebo nieco przysłaniają nam dwie wyższe górki ok. 20 stopni, reszta nieboskłonu widoczna juz od około 10 stopni. Jakies 600-700 metrów dalej znajduje sie agroturystyka Gościniec Banica. Tak ze spokojnie można sobie nawet weekend zaplanowac pod pieknym niebem. Ogolnie dużo szlaków rowerowych oraz pieszych. Malym minusem jest fakt, ze polanka znaduje się blisko drogi asfaltowej i czasami (choć rzadko) przejezdna czasami tędy samochod, a jak wiadomo my nie lubimy sztucznych świateł, ale wyjsciem z problemu zaszycie się troche dalej na polanie."
     },
     {
       "id": 2,
       "name": "Radocyna",
       "type": "spot",
-      "lat": "49.46777778",
-      "lng": "21.37305556",
+      "lat": 49.46777778,
+      "lng": 21.37305556,
       "description": "Niebo zdecydowanie ciemniejsze, dojazd niestety gorszy (droga od Krzywej szutrowa). Sama Radocyna znajduje sie na wysokość około 514 m.n.p.m. Tutaj to już praktycznie przeszkadzać w nocy może nam jakaś sowa, chociaż czasem może jakiś samochod pojawić się który jedzie własnie do Schroniska Nadleśnictwa. Miejsce co jest praktycznie ostatnim miejscem na mapie w tej okolicy. W samej Radocynie pozostaly dwa budynki, Schronisko Nadleśnictwa oraz samo Nadleśnictwo."
+    },
+    {
+      "id": 3,
+      "name": "Wyszowatka",
+      "type": "spot",
+      "lat": 49.45972222,
+      "lng": 21.40166667,
+      "description": "Miejsce dla koogoś kto by chciał sie zajać astrofoto. Miejsce odlegle od samej Radocyny-około 2 km dalej. Ale znajduje się zdecydowanie wyżej,  wysokość około 600 m.n.p.m, (a wiadomo co nam to daje). Osobiście miałem tylko raz przyjemność tam obserowac i zauważyłem, ze delikatny wiaterek który tam wieje pomaga w odraszaniu sprzętu. Generalnie cisza, spokoj i piekne niebo."
     }
+
 
   ]
 }

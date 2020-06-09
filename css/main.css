@@ -375,27 +375,14 @@ footer div:first-child {
 }
 
 /* line 228, scss/main.css */
-.app-logo {
-  font-family: 'Dancing Script', cursive;
-  text-align: center;
-  background: #009273;
-  font-size: 4rem;
-}
-
-/* line 233, scss/main.css */
-.app-logo span {
-  color: white;
-}
-
-/* line 235, scss/main.css */
-.app-logo span:nth-last-child(1) {
-  color: gold;
-}
-
-/* line 238, scss/main.css */
 .map_container {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #009273;
+}
+
+/* line 234, scss/main.css */
+.nav_diff {
+  font-family: 'Karma', serif;
 }

@@ -57,21 +57,42 @@ function Map() {
           />
 
         {spots.map(spot => (
-          <Marker
-            key={spot.id}
-            position={{
-              lat: spot.lat,
-              lng: spot.lng
-            }}
-            onClick={() => {
-              setSelectedSpot(spot);
-            }}
-            icon={{
-              url: `/favicon-16x16.png`,
-              scaledSize: new window.google.maps.Size(20, 20)
-            }}
-          />
+          // if(spot.type === "spot") {
+          //
+          // }
+          (spot.type === "spot") ? (
+            <Marker
+              key={spot.id}
+              position={{
+                lat: spot.lat,
+                lng: spot.lng
+              }}
+              onClick={() => {
+                setSelectedSpot(spot);
+              }}
+              icon={{
+                url: `/favicon-16x16.png`,
+                scaledSize: new window.google.maps.Size(20, 20)
+              }}
+            />
+          ) : (
+            <Marker
+              key={spot.id}
+              position={{
+                lat: spot.lat,
+                lng: spot.lng
+              }}
+              onClick={() => {
+                setSelectedSpot(spot);
+              }}
+              icon={{
+                url: `/star.png`,
+                scaledSize: new window.google.maps.Size(20, 20)
+              }}
+            />
+          )
         ))}
+
         {selectedSpot && (
           <InfoWindow
             onCloseClick={() => {
@@ -84,6 +105,8 @@ function Map() {
           >
             <div>
               <h2>{selectedSpot.name}</h2>
+              <p><span  style={{fontWeight: "bold"}}>Szerokosc geograficzna: </span>{selectedSpot.lat} N</p>
+              <p><span  style={{fontWeight: "bold"}}>Dlugosc geograficzna: </span>{selectedSpot.lng} E</p>
               <p>{selectedSpot.description}</p>
             </div>
           </InfoWindow>
@@ -97,7 +120,7 @@ const MapWrapped = withScriptjs(withGoogleMap(Map));
 export default function FinalMap() {
   return (
     <div className="map_container">
-      <div style={{ width: "80vw", height: "80vh" }}>
+      <div style={{ width: "80vw", height: "85vh" }}>
         <MapWrapped
           googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`}
           loadingElement={<div style={{ height: `100%` }} />}

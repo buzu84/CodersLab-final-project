@@ -6,14 +6,14 @@ import {
   Marker,
   InfoWindow
 } from "react-google-maps";
-import * as spotsData from "../data/spots.json";
+// import * as spotsData from "../data/spots.json";
 import mapStyles from "./mapStyles";
 
 function Map() {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [lat, setLat] = useState(50.064651);
   const [lng, setLng] = useState(19.944981);
-  const [spots, setSpots] = useState(null);
+  const [spots, setSpots] = useState([]);
   const API = "http://localhost:3000";
 
   // const fetchSpots = () => {
@@ -30,7 +30,7 @@ function Map() {
     fetch(`${API}/spots`)
     .then(response => response.json())
     .then(response => setSpots(response))
-  }, [spots]);
+  }, []);
 
   useEffect(() => {
     const listener = e => {
@@ -66,7 +66,7 @@ function Map() {
           }}
           />
 
-        {spotsData.spots.map(spot => (
+        {spots.map(spot => (
           <Marker
             key={spot.id}
             position={{

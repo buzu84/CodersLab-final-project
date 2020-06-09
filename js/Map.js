@@ -13,6 +13,24 @@ function Map() {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [lat, setLat] = useState(50.064651);
   const [lng, setLng] = useState(19.944981);
+  const [spots, setSpots] = useState(null);
+  const API = "http://localhost:3000";
+
+  // const fetchSpots = () => {
+  //       fetch(`${API}/spots`)
+  //           .then(response => response.json())
+  //           .then(response => setSpots(response))
+  //   };
+  // useEffect(() => {
+  //   fetch(`${API}/spots`)
+  //       .then(response => response.json())
+  //       .then(response => setSpots(response))
+  // }, []);
+  useEffect(() => {
+    fetch(`${API}/spots`)
+    .then(response => response.json())
+    .then(response => setSpots(response))
+  }, [spots]);
 
   useEffect(() => {
     const listener = e => {
@@ -47,6 +65,7 @@ function Map() {
             lng: lng
           }}
           />
+
         {spotsData.spots.map(spot => (
           <Marker
             key={spot.id}

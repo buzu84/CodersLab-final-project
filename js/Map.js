@@ -6,13 +6,21 @@ import {
   Marker,
   InfoWindow
 } from "react-google-maps";
-import * as spotsData from "../data/spots.json";
+
 import mapStyles from "./mapStyles";
 
 function Map() {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [lat, setLat] = useState(50.064651);
   const [lng, setLng] = useState(19.944981);
+  const [spots, setSpots] = useState([]);
+  const API = "http://localhost:3000";
+
+  useEffect(() => {
+    fetch(`${API}/spots`)
+    .then(response => response.json())
+    .then(response => setSpots(response))
+  }, []);
 
   useEffect(() => {
     const listener = e => {
@@ -32,12 +40,12 @@ function Map() {
       setLat(position.coords.latitude);
       setLng(position.coords.longitude);
     });
-  }, [lat,lng]);
+  }, []);
 
   return (
     <>
       <GoogleMap
-        defaultZoom={10}
+        defaultZoom={9}
         center={{ lat, lng }}
         defaultOptions={{ styles: mapStyles }}
       />
@@ -47,7 +55,8 @@ function Map() {
             lng: lng
           }}
           />
-        {spotsData.spots.map(spot => (
+
+        {spots.map(spot => (
           <Marker
             key={spot.id}
             position={{
@@ -59,7 +68,7 @@ function Map() {
             }}
             icon={{
               url: `/favicon-16x16.png`,
-              scaledSize: new window.google.maps.Size(25, 25)
+              scaledSize: new window.google.maps.Size(20, 20)
             }}
           />
         ))}

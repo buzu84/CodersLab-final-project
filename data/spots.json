@@ -399,6 +399,86 @@
       "lat": 51.986818,
       "lng": 22.051602,
       "description": "Dojazd bardzo dobry jedynie ostatnie 2 km polnymi drogami lecz przejezdne. Ale w zimę gdy spadnie śnieg i podczas roztopów może być problem. Bardzo niewielka łuna od Stoczka, poza tym niebo super. Nie oślepiają żadne latarnie, wszystkie okoliczne wioski odcięte drzewami."
+    },
+    {
+      "id": 51,
+      "name": "Obserwatorium astronomiczne w Poznaniu",
+      "type": "observatory",
+      "lat": 52.394340,
+      "lng": 16.874740,
+      "description": "Historia Obserwatorium Astronomicznego w Poznaniu ma swój prapoczątek w 1906 roku, jeszcze w okresie zaborów, kiedy to rektor ówczesnej Königliche Akademie zu Posen (pruskiej Akademii Królewskiej) zaproponował zorganizowanie w Poznaniu Obserwatorium i z prośbą o pomoc w realizacji tego zadania zwrócił się do znanego już wówczas polskiego astronoma zatrudnionego w obserwatorium Hamburg-Bergedorf, dra Kazimierza Graffa. Graff odmówił wówczas wykonania tego zadania, zgodził się jednak na pomoc w zakupach sprzętu niezbędnego do wyposażenia przyszłego obserwatorium (m.in. refraktora o średnicy 9,5 cm). Po odzyskaniu przez Polskę niepodległości sprzęt ten został w 1919 roku przekazany kierownikowi nowo utworzonego Zakładu Fizyki Uniwersytetu Poznańskiego, Alfredowi Denizotowi."
+    },
+    {
+      "id": 52,
+      "name": "Planetarium Śląskie",
+      "type": "observatory",
+      "lat": 50.290900,
+      "lng": 18.992390,
+      "description": "Historia Obserwatorium Astronomicznego w Poznaniu ma swój prapoczątek w 1906 roku, jeszcze w okresie zaborów, kiedy to rektor ówczesnej Königliche Akademie zu Posen (pruskiej Akademii Królewskiej) zaproponował zorganizowanie w Poznaniu Obserwatorium i z prośbą o pomoc w realizacji tego zadania zwrócił się do znanego już wówczas polskiego astronoma zatrudnionego w obserwatorium Hamburg-Bergedorf, dra Kazimierza Graffa. Graff odmówił wówczas wykonania tego zadania, zgodził się jednak na pomoc w zakupach sprzętu niezbędnego do wyposażenia przyszłego obserwatorium (m.in. refraktora o średnicy 9,5 cm). Po odzyskaniu przez Polskę niepodległości sprzęt ten został w 1919 roku przekazany kierownikowi nowo utworzonego Zakładu Fizyki Uniwersytetu Poznańskiego, Alfredowi Denizotowi."
+    },
+    {
+      "id": 53,
+      "name": "Mlodziezowe obserwatorium w Niepolomicach",
+      "type": "observatory",
+      "lat": 50.032840,
+      "lng": 20.220750,
+      "description": "Miejsce niezwykłe i obdarzone cechą szczególną – tu dzieci i młodzież samodzielnie wydzierają światu jego tajemnice, obserwując przez lunety Słońce i gwiazdy. Najmłodsi czynią to w trakcie zabawy, starsi mają do dyspozycji nowoczesne teleskopy i urządzenia pomiarowe."
+    },
+    {
+      "id": 54,
+      "name": "Obserwatorium Astronomiczne Uniwersytetu Warszawskiego",
+      "type": "observatory",
+      "lat": 52.216790,
+      "lng": 21.026470,
+      "description": "Obserwatorium Astronomiczne Uniwersytetu Warszawskiego (OAUW) jest placówką naukową działającą nieprzerwanie od ponad dwustu lat – od 1825 r. w budynku Obserwatorium Astronomicznego w Al. Ujazdowskich 4. Kadra naukowo-dydaktyczna liczy obecnie siedemnastu pracowników w tym: ośmiu z tytułem profesora, jednego członka Polskiej Akademii Umiejętności i Polskiej Akademii Nauk. Działalność naukowo-dydaktyczną aktywnie wspomaga kilkoro doktorantów."
+    },
+    {
+      "id": 55,
+      "name": "Obserwatorium Astronomiczne w Radomyślu Wielkim",
+      "type": "observatory",
+      "lat": 50.197260,
+      "lng": 21.270070,
+      "description": "Ogladnij pokaz w naszym planetarium. Naucz sie konstelacji, a wszystkiemu będą sie przyglądac dwa olbrzymy naszego Układu Słonecznego - Jowisz i Saturn. Im też nie odpuścimy i wycelujemy w nie nasze teleskopy by zobaczyć Saturnowe hula-hop oraz pasiak Jowisza."
+    },
+    {
+      "id": 56,
+      "name": "Obserwatorium w Olsztynie",
+      "type": "observatory",
+      "lat": 53.772450,
+      "lng": 20.488730,
+      "description": "Obserwatorium Astronomiczne w Olsztynie zlokalizowane jest w XIX-wiecznej wieży ciśnień wznoszącej się na najwyższym wzniesieniu dawnego Olsztyna. Po renowacji w 2008 roku budynek został laureatem konkursu Zabytek Zadbany – ogłoszonego przez Ministra Kultury i Dziedzictwa Narodowego. Na kolejnych piętrach wieży można zapoznać się z rozwojem astronomii oraz z różnymi metodami obserwacji i pomiarów astronomicznych. Zainstalowana w budynku winda udostępnia Obserwatorium Astronomiczne także dla osób z niepełnosprawnością. Zaczynamy wizytę od poznania historycznych instrumentów obserwacyjnych pozwalających mierzyć położenia obiektów astronomicznych na sferze niebieskiej oraz śledzimy ewolucje metod pomiaru czasu, wielkości niezbędnej dla opisu ich ruchu i przez stulecia nierozerwalnie związanej z astronomią. Meteoryty są źródłem informacji o genezie Układu Słonecznego. Ich struktura i skład chemiczny rejestrują, niczym skamieliny, ewolucję materii kosmicznej od czasów sprzed 4,5 miliardów lat, gdy w ogromnym, wirującym wokół Słońca gazowo pyłowym dysku formował się układ planetarny. Wyjątkowym eksponatem w pracowni meteorytyki są okruchy skał księżycowych przywiezione na Ziemię przez załogę misji Apollo 11, pierwszej w historii ludzkości załogowej wyprawy na Księżyc."
+    },
+    {
+      "id": 57,
+      "name": "Planetarium i Obserwatorium Astronomiczne im. Mikołaja Kopernika",
+      "type": "observatory",
+      "lat": 53.479330,
+      "lng": 18.751200,
+      "description": "Planetarium i Obserwatorium Astronomiczne im. Mikołaja Kopernika w Grudziądzu działa już od ponad 40 lat. W momencie otwarcia oficjalna nazwa placówki brzmiała: Ludowe Obserwatorium Astronomiczne i Planetarium (LOAiP). W momencie powołania w 1964 roku Głównej Komisji Budowy LOAiP, uchwałą Walnego Zjazdu Delegatów Polskiego Towarzystwa Miłośników Astronomii w Krakowie, istniało wówczas w Polsce tylko jedno duże Planetarium Śląskie w Chorzowie."
+    },
+    {
+      "id": 58,
+      "name": "Planetarium i Park Astronomiczny we Fromborku",
+      "type": "observatory",
+      "lat": 54.356500,
+      "lng": 19.682100,
+      "description": "Planetarium znajduje się w dawnej dzwonnicy katedralnej zwanej Wieżą Radziejowskiego. Wyposażone jest w aparaturę firmy Carl Zeiss, która wyświetla na kopule o średnicy 8 m obrazy nieba widoczne z dowolnego miejsca na Ziemi, pory dnia i roku. Przedstawia na sztucznym niebie drogę Słońca, planet, komet i sztucznych satelitów oraz obrazy ponad 6000 gwiazd."
+    },
+    {
+      "id": 59,
+      "name": "Obserwatorium Astronomiczne Uniwersytetu Opolskiego",
+      "type": "observatory",
+      "lat": 50.672420,
+      "lng": 17.933150,
+      "description": "Obserwatorium astronomiczne Uniwersytetu Opolskiego znajduje się na dachu domu studenckiego “Niechcic”. Opiekują się nim pracownicy Instytutu Fizyki, obserwatorium służy nie tylko uniwersyteckiej nauce, ale organizuje też lekcje astronomii dla szkół, sesje obserwacyjne dla grup zorganizowanych oraz osób indywidualnych. Sesje dzienne umożliwiają obserwowanie plam na Słońcu, czemu towarzyszy omówienie przejawów aktywności słonecznej w danym momencie. Podczas pokazów wieczornych możliwa jest obserwacja między innymi Księżyca i planet. W obserwatorium znajduje się aż pięć teleskopów. Podczas prezentacji sprzętu szczegółowo omawiana jest budowa każdego z nich wraz z charakterystyką prac prowadzonych z ich pomocą."
+    },
+    {
+      "id": 60,
+      "name": "Obserwatorium Astronomiczne w Truszczynach",
+      "type": "observatory",
+      "lat": 53.384240,
+      "lng": 19.927750,
+      "description": "Oprócz obserwacji Słońca i nocnego nieba obserwatorium oferuje możliwość zwiedzenia wystawy o Mikołaju Koperniku oraz kolekcji meteorytów, a także obejrzenia filmów o tematyce związanej z badaniami Kosmosu i historią nauki. Na terenie obserwatorium obejrzeć można również jedyną na świecie przenośną miniaturę Układu Słonecznego EXPOM w skali 1:10 000 000 000, autorstwa rzeźbiarza Andrzeja Renesa oraz Roberta Szaj"
     }
 
 

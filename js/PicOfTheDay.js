@@ -8,7 +8,7 @@ const PicOfTheDay = () => {
   const [currentDate, setCurrentDate] = useState(new Date().toISOString().split('T')[0]);
 
   useEffect(() => {
-    fetch(`https://api.nasa.gov/planetary/apod?api_key=UqUXmRRFQfJ5lLC3wspd2BXfCzMPRRwqQkoWWGoC`)
+    fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&date`)
     .then(response => response.json())
     .then(json => setPicture(json))
   }, []);
@@ -16,7 +16,21 @@ const PicOfTheDay = () => {
   return (
     <div className="container NASAPic_container">
       <h3 className="NASAHeader" >{picture.title}</h3>
-      <img className="NASAPic" src={picture.url} alt={picture.title} />
+      {picture.media_type === "image" ? (
+        <img className="NASAPic"
+        src={picture.url}
+        alt={picture.title} />
+      ) : (
+        <iframe
+        title="space-video"
+        src={picture.url}
+        frameBorder="0"
+        gesture="media"
+        allow="encrypted-media"
+        allowFullScreen
+        className="photo"
+        />
+      )}
       <p className="pic_description">{picture.explanation}</p>
     </div>
   );

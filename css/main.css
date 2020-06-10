@@ -383,6 +383,28 @@ footer div:first-child {
 }
 
 /* line 234, scss/main.css */
-.nav_diff {
+.NASAPic_container {
+  background: #009273;
   font-family: 'Karma', serif;
+}
+
+/* line 237, scss/main.css */
+.NASAPic_container .NASAHeader {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* line 241, scss/main.css */
+.NASAPic_container .NASAPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* line 246, scss/main.css */
+.NASAPic_container .pic_description {
+  padding: 5rem;
+  text-align: center;
 }

@@ -11,7 +11,9 @@ import MeteorShowerDates from './MeteorShowerDates';
 import PicOfTheDay from './PicOfTheDay';
 
 export default () => {
-
+  const activeStyle = {
+        color: "red"
+    };
 
   return (
 
@@ -21,9 +23,10 @@ export default () => {
           <h1 className="logo"><span>Astro</span><span>Labium</span></h1>
           <nav>
             <ul>
-              <li><NavLink className="nav_diff" exact to="/astrolabium">MAPA</NavLink></li>
-              <li><NavLink className="nav_diff" to="/astrolabium/picture">NASA OBRAZEK DNIA</NavLink></li>
-              <li><NavLink className="nav_diff" to="/astrolabium/calendar">DESZCZ METEORYTOW</NavLink></li>
+              <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" exact to="/astrolabium">MAPA</NavLink></li>
+              <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" to="/astrolabium/picture">NASA OBRAZEK DNIA</NavLink></li>
+              <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" to="/astrolabium/calendar">DESZCZ METEORYTOW</NavLink></li>
+              <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" exact to="/">STRONA GLOWNA</NavLink></li>
             </ul>
           </nav>
         </header>

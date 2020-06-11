@@ -57,9 +57,6 @@ function Map() {
           />
 
         {spots.map(spot => (
-          // if(spot.type === "spot") {
-          //
-          // }
           (spot.type === "spot") ? (
             <Marker
               key={spot.id}

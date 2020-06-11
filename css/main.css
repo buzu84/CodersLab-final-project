@@ -383,6 +383,50 @@ footer div:first-child {
 }
 
 /* line 234, scss/main.css */
-.nav_diff {
+.NASAPic_container {
+  background: #009273;
   font-family: 'Karma', serif;
+}
+
+/* line 237, scss/main.css */
+.NASAPic_container .NASAHeader {
+  padding-top: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* line 242, scss/main.css */
+.NASAPic_container .NASAPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* line 247, scss/main.css */
+.NASAPic_container .photo {
+  height: 500px;
+  width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 253, scss/main.css */
+.NASAPic_container .pic_description {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  text-align: center;
+}
+
+/* line 257, scss/main.css */
+.NASAPic_container .pic_date {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

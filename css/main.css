@@ -390,12 +390,13 @@ footer div:first-child {
 
 /* line 237, scss/main.css */
 .NASAPic_container .NASAHeader {
+  padding-top: 2rem;
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
 }
 
-/* line 241, scss/main.css */
+/* line 242, scss/main.css */
 .NASAPic_container .NASAPic {
   display: block;
   margin-left: auto;
@@ -403,8 +404,29 @@ footer div:first-child {
   width: 50%;
 }
 
-/* line 246, scss/main.css */
+/* line 247, scss/main.css */
+.NASAPic_container .photo {
+  height: 500px;
+  width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 253, scss/main.css */
 .NASAPic_container .pic_description {
-  padding: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   text-align: center;
+}
+
+/* line 257, scss/main.css */
+.NASAPic_container .pic_date {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

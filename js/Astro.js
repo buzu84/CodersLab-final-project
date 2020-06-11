@@ -25,8 +25,8 @@ export default () => {
             <ul>
               <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" exact to="/astrolabium">MAPA</NavLink></li>
               <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" to="/astrolabium/picture">NASA OBRAZEK DNIA</NavLink></li>
-              <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" to="/astrolabium/calendar">DESZCZ METEORYTOW</NavLink></li>
-              <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" exact to="/">STRONA GLOWNA</NavLink></li>
+              <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" to="/astrolabium/calendar">DESZCZ METEORYTÓW</NavLink></li>
+              <li><NavLink activeStyle={activeStyle} activeClassName="active" className="nav_diff" exact to="/">STRONA GŁÓWNA</NavLink></li>
             </ul>
           </nav>
         </header>

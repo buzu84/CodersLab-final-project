@@ -434,15 +434,45 @@ footer div:first-child {
 /* line 266, scss/main.css */
 .met_shower_dates {
   background: #009273;
-  font-family: 'Karma', serif;
 }
 
-/* line 269, scss/main.css */
-.met_shower_dates .event_name {
+/* line 268, scss/main.css */
+.met_shower_dates .event_element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 273, scss/main.css */
+.met_shower_dates .event_element .event_name {
   text-transform: uppercase;
 }
 
-/* line 271, scss/main.css */
-.met_shower_dates .peak_hour {
+/* line 275, scss/main.css */
+.met_shower_dates .event_element .peak_hour {
   font-weight: bold;
+}
+
+/* line 278, scss/main.css */
+.hidden_desc {
+  display: none;
+}
+
+/* line 281, scss/main.css */
+.gradient_picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 286, scss/main.css */
+.description_button {
+  font-family: 'Dancing Script', cursive;
+  color: gold;
+  width: 150px;
+  height: 50px;
+  border-radius: 10%;
+  background: #1f1f29;
+  font-size: 1.5rem;
 }

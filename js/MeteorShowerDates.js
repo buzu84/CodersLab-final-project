@@ -13,22 +13,44 @@ const MeteorShowerDates = () => {
     .then(response => setEvents(response))
   }, []);
 
+
+  const handleShowDescription = (id, e) => {
+    const eventToShow = document.getElementById(`description_${id}`);
+    if (eventToShow.classList.contains('hidden_desc')) {
+      eventToShow.classList.remove('hidden_desc')
+    } else {
+      eventToShow.classList.add('hidden_desc')
+    }
+  }
+
   return (
     <div className="container met_shower_dates">
       <ul>
         {events.map(event => {
           return (
-            <li key={event.id}>
-              <h2 className="event_name">{event.name}</h2>
-              <p>{event.date}</p>
-              <p><span className="peak_hour>">Godzina szczytu roju meteorytów: </span>{event.peakHour}</p>
-              <p>{event.description}</p>
+            <li className="event_element" key={event.id}>
+              <h2 className="event_name"><img src="/star.png" className="pr-30"/>{event.date}  {event.name}</h2>
+              <p className="peak_hour">Godzina szczytu roju meteorytów {event.peakHour} (ECT)</p>
+              <input type="submit" value="Pokaż/ukryj opis" className="description_button" onClick={e => handleShowDescription(event.id, e)} />
+              <p id={`description_${event.id}`} className="hidden_desc">
+              {event.description}
+              {event.source ? (
+                <img
+                className="gradient_picture"
+                src={event.source}
+                alt={event.name}
+                 />
+              ) : (
+                null
+              )}
+              </p>
+
+
             </li>
           )
         })}
       </ul>
     </div>
-
   );
 }
 

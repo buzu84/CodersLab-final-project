@@ -488,8 +488,97 @@
       "name": "Maksimum Czerwcowych Bootydów",
       "type": "meteor shower",
       "date": "2020-06-28",
-      "peakHour": "0:45",
+      "peakHour": "1:45",
       "description": "Rój meteorów, radiant znajduje się w gwiazdozbiorze Wolarza. Maksimum roju przypada na 28 czerwca, jego aktywność jest zmienna. Prędkość meteorów wynosi 14 km/s, przez co jest jednym z bardziej atrakcyjnych zjawisk astronomicznych. Warto wiedzieć, że rój tent związany jest z kometą 7P/Pons-Winnecke, odkrytą 12 czerwca 1819 roku. Jest to kometa o dość przeciętnych rozmiarach, ponieważ jej średnica liczy około 5,2 km. Liczba zjawisk, jakie możemy obserwować co roku w ciągu jednej godziny, jest zmienna, a prędkość osiągana przez meteory wynosi około 14 km/s. Konstelację tę jest stosunkowo łatwo zlokalizować, ponieważ graniczy ona od zachodu z Wężem, Herkulesem oraz pozostałymi gwiazdozbiorami takimi, jak Smok, Warkocz Bereniki czy z dobrze wszystkim znaną konstelacją Wielkiej Niedźwiedzicy. Rój ten znany jest od początku XX wieku, jego największa aktywność przypadała na lata 1916, 1921, 1927, 1998 i 2004."
+    },
+    {
+      "id": 2,
+      "name": "Maksimum Południowych delta Akwarydów",
+      "type": "meteor shower",
+      "date": "2020-07-27",
+      "peakHour": "23:08",
+      "description": "Maksimum roju przypada na 28 lipca, jego aktywność jest wysoka, a obfitość roju wynosi 20 meteorów/h. Prędkość meteorów z roju wynosi 41 km/s. Południowe delta Akwarydy są rojem związanym z grupą komet muskających Słońce należących do rodziny Krachta lub Machholza."
+    },
+    {
+      "id": 3,
+      "name": "Maksimum Perseidów",
+      "type": "meteor shower",
+      "date": "2020-08-12",
+      "peakHour": "15:02",
+      "source": "./gradients/perseidy_gradient.jpg",
+      "description": "Nawet “niedzielni” obserwatorzy nieba wiedzą, że co roku spodziewać się można roju meteorów, po którym można oczekiwać nawet 100 zjawisk na godzinę w czasie przyjemnych, ciepłych, lipcowo-sierpniowych nocy. Ich największa wydajność to stosunkowo krótki okres czasu tuż przed połową sierpnia. Obserwujemy je już co najmniej prawie 2000 lat, a najstarsze chińskie zapiski o obserwacjach pochodzą z 36 roku naszej ery. Liczne wzmianki pojawiają się w chińskich, japońskich i koreańskich relacjach między ósmym a jedenastym stuleciem ale tylko sporadyczne odniesienia znajdujemy w późniejszych wiekach. Sprawa radiantu Perseidów jest nieco skomplikowana. Główny radiant znajduje się w pobliżu gwiazdy Eta Persei, ale inne radianty wydają się być aktywne w tym samym czasie. Już w 1879 roku W. F. Denning wskazał na istnienie dwóch równoległych rojów z okolic Chi i Gammy Persei. Ten ostatni rój jest jednym z najbardziej aktywnych rojów wtórnych w XX wieku. Jednym z najnowszych przykładów złożoności roju Perseidów są trzy badania przeprowadzone w latach 1969-1971 przez obserwatorów na Krymie. Oprócz głównego radiantu w pobliżu Ety Persei potwierdziły one istnienie radiantów pobliżu Chi i Gamma Persei, jak również drobne “ogniska” pobliżu Alfy i Bety Persei. Te ostatnie są zwykle krótkotrwałe i poruszają się prawie równolegle do głównego radiantu. Ziemia na swojej orbicie napotyka pozostałości komety Swift-Tuttle od 17 lipca do 24 sierpnia jednak w najbardziej “zatłoczonym” miejscu znajduje się co roku około 12 sierpnia. Oznacza to, że najwięcej meteorów zobaczymy właśnie w okolicach tej daty, ale mniejsze ilości można złapać przez około dwa tygodnie przed maksimum i niecałe dwa tygodnie po nim. Gwiazdozbiór Perseusza najlepiej widoczny będzie w drugiej połowie nocy. "
+    },
+    {
+      "id": 4,
+      "name": "Maksimum Drakonidów",
+      "type": "meteor shower",
+      "date": "2020-10-08",
+      "peakHour": "22:12",
+      "source": "./gradients/drakonidy_gradient.jpg",
+      "description": "Drakonidy (DRA) zwane też Giacobinidy – coroczny stały rój meteorów o aktywności między 6 października a 10 października i maksimum przypadającym na 8 października. Ich radiant znajduje się w gwiazdozbiorze Smoka. Są pozostałością komety 21P/Giacobini-Zinner, ich wzmożoną aktywność obserwuje się w latach powrotu komety w okolice Słońca."
+    },
+    {
+      "id": 5,
+      "name": "Maksimum Orionidów",
+      "type": "meteor shower",
+      "date": "2020-10-21",
+      "peakHour": "07:21",
+      "source": "./gradients/orionidy_gradient.jpg",
+      "description": "Maksimum aktywności tego roju występuje zwykle w okolicach 21-22 października. Jest ono przy tym bardzo szerokie – kilkanaście lub nawet kilkadziesiąt małych meteorów na godzinę możemy obserwować między 19 a 24 października. Trzeba przy tym zaznaczyć, że Orionidy najlepiej obserwować w drugiej połowie nocy. Wtedy bowiem radiant roju (czyli miejsce, z którego zdają się wybiegać jego meteory), leżący na granicy gwiazdozbiorów Oriona i Bliźniąt, znajduje się wysoko nad horyzontem. Orbita komety Halley’a, która jest ciałem macierzystym Orionidów, przecina się z orbitą Ziemi w dwóch miejscach. Materiał pozostawiony przez kometę w jednym z tych miejsc daje meteory z roju Eta Aquarydów, a w drugim z roju Orionidów. W tym drugim przypadku materiał kometarny jest rozrzucony na tak dużym obszarze, że Ziemia przechodzi przez niego od 2 października do 7 listopada. W tych właśnie dniach na niebie możemy obserwować meteory z roju Orionidów. Są to zjawiska bardzo szybkie, bo wchodzą w naszą atmosferę z prędkością 66 km/s."
+    },
+    {
+      "id": 6,
+      "name": "Maksimum Leonidów",
+      "type": "meteor shower",
+      "date": "2020-11-17",
+      "peakHour": "12:24",
+      "source": "./gradients/leonidy_gradient.png",
+      "description": "Rój meteorów związany z kometą 55P/Tempel-Tuttle, aktywny od 10 do 23 listopada, którego maksimum przypada na 17/18 listopada każdego roku. Radiant roju znajduje się w pobliżu gwiazdy poczwórnej Gamma Leonis o jasności 2,01m. Jest to najszybszy znany rój meteorów – prędkość meteoroidów w ziemskiej atmosferze dochodzi do 72 km/s. W przeszłości rój tworzył spektakularne „deszcze meteorów”."
+    },
+    {
+      "id": 7,
+      "name": "Maksimum Geminidów",
+      "type": "meteor shower",
+      "date": "2020-12-14",
+      "peakHour": "17:17",
+      "source": "./gradients/geminidy_gradient.jpg",
+      "description": "Geminidy (GEM) – rój meteorów, o radiancie w okolicy Kastora, jednej z najjaśniejszych gwiazd w gwiazdozbiorze Bliźniąt, powstały w wyniku rozpadu planetoidy (3200) Phaethon. Obiekt ten o średnicy 5 km zbliża się do Słońca co 1,43 lat na odległość zaledwie 0,14 j.a. Maksimum roju przypada na 14 grudnia (widoczny od 7 grudnia do 17 grudnia), można zaobserwować do 120 śladów na godzinę."
+    },
+    {
+      "id": 8,
+      "name": "Maksimum Ursydów",
+      "type": "meteor shower",
+      "date": "2020-12-22",
+      "peakHour": "10:00",
+      "source": "./gradients/ursydy_gradient.jpg",
+      "description": "Ursydy (URS) – rój meteorów związany z kometą 8P/Tuttle, który możemy obserwować od 17 do 26 grudnia. Maksimum roju przypada na 22-23 grudnia. Obfitość roju wynosi ok. 10 zjawisk na godzinę a jego radiant znajduje się w Małej Niedźwiedzicy w pobliżu gwiazdy β UMi. Prędkość meteorów z roju wynosi 34 km/s. Dwukrotnie, w 1945 i 1986 roku, odnotowano wysoką aktywności tego roju, wówczas jego obfitość sięgała ponad 100 meteorów w ciągu godziny. Nieco podwyższoną aktywność o liczbach godzinnych około 30-35 zaobserwowano kilkakrotnie w latach: 1988, 1994, 2000, 2006, 2007 i 2008"
+    },
+    {
+      "id": 9,
+      "name": "Maksimum Kwadrantydów",
+      "type": "meteor shower",
+      "date": "2021-01-03",
+      "peakHour": "15:47",
+      "source": "./gradients/kwadrantydy_gradient.png",
+      "description": "Kwadrantydy to deszcz meteorów, który inauguruje każdy rok. Nieco mniej popularny niż Perseidy, Leonidy czy Geminidy, jednak potrafi zaoferować aż do 120 meteorów na godzinę. Chociaż Kwadrantydy można podziwiać przez cały pierwszy tydzień roku, maksimum “jest bardzo wąskie” i trwa tylko kilka (4-6) godzin. Nazwa roju pochodzi od nieistniejącego już gwiazdozbioru Kwadrantu Ściennego – łac. Quadrans Muralis (obecnie część Wolarza), a jego radiant jest położony na pograniczu Wolarza, Herkulesa i Smoka. Prędkość meteorów wynosi ok. 41 km/s, co jest wartością średnią w porównaniu z wolnymi Capricornidami, a bardzo szybkimi Leonidami. Aktywność roju jest wysoka i wynosi w maksimum 120 meteorów na godzinę. W skrócie można określić miejsce na pogranicze gwiazdozbiorów Wolarza, Herkulesa i Smoka. Nazwa roju pochodzi od nieistniejącego już gwiazdozbioru Kwadrantu Ściennego – łac. Quadrans Muralis (obecnie część Wolarza) zaproponowanego przez francuskiego astronoma Jerome Lalande w 1795 roku."
+    },
+    {
+      "id": 10,
+      "name": "Maksimum Lirydów",
+      "type": "meteor shower",
+      "date": "2021-04-22",
+      "peakHour": "14:16",
+      "source": "./gradients/lirydy_gradient.png",
+      "description": "Lirydy – rój meteorów związany z kometą Thatchera (C/1861 G1). Ich radiant znajduje się na granicy gwiazdozbiorów Lutni i Herkulesa. Aktywność roju wypada pomiędzy 16 a 25 kwietnia z maksimum występującym w okolicach 21-22 kwietnia z aktywnością na poziomie ZHR=18. Prędkość Lirydów wynosi 49 km/s, są więc zjawiskami dość szybkimi. Rój Lirydów jest pierwszym rojem, o którym wspominają starożytne kroniki. Najwcześniejsze wzmianki na temat jego aktywności można znaleźć już w chińskich zapiskach datowanych na rok 2000 p.n.e. Wysoką aktywność tego roju odnotowano także w latach 687 i 15 p.n.e. W znacznie bliższych nam czasach Lirydy też popisywały się wysoką aktywnością. W roku 1803 obserwatorzy amerykańscy odnotowali maksimum z ZHR rzędu 700. W roku 1922 w Polsce obserwowano ZHRy z zakresu 360-600[2]. Trochę niższe maksima z ZHR rzędu 100 odnotowano także w latach 1934, 1945, 1946 i 1982. W ostatnich latach najwyższą aktywność Lirydów z ZHR=38 odnotowano w roku 2012[5]. W Polsce, dzięki Pracowni Komet i Meteorów, udało się zorganizować dwie duże kampanie obserwacyjne poświęcone temu rojowi (lata 1996, 2004). Pomimo tego, że Lirydy są rojem bardzo starym, wyróżniają się w miarę ostrym maksimum i krótkim okresem aktywności. Takie zachowanie roju zawdzięczamy orbicie ciała macierzystego roju – komecie Thather (C/1861 G1), która przecina się z ekliptyką pod kątem aż 80 stopni. Tak duże nachylenie powoduje, że meteoroidy z roju Lirydów są prawie wolne od perturbacji grawitacyjnych innych ciał Układu Słonecznego. Wieczorem w Polsce radiant Lirydów wznosi się ledwie 10 stopni ponad horyzont. Tuż po zachodzie Słońca nie należy więc liczyć na wysokie liczby godzinne. Już jednak około godziny 21 UTC (23 czasu lokalnego) znajduje się on na wysokości 30 stopni, a do świtu wzniesie się nawet do 70 stopni."
+    },
+    {
+      "id": 11,
+      "name": "Maksimum Eta Akwarydów",
+      "type": "meteor shower",
+      "date": "2021-05-05",
+      "peakHour": "03:03",
+      "source": "./gradients/akwarydy_gradient.jpg",
+      "description": "Eta Akwarydy (η Akwarydy, ETA); (łac. eta Aquarids) – nazwa roju meteorów pochodząca od nazwy gwiazdozbiorze Wodnika (łac. Aquarius) z którego “promieniują” czyli posiadają tam swój radiant. Zjawisko to można obserwować począwszy od 19 kwietnia do 28 maja, przy czym czas maksymalnej aktywności przypada na 6 maja. Rój ten powstał na skutek przelotów w okolicy Słońca jednej z najsłynniejszych komet – komety Halleya. Radiant roju jest nisko położony (rektascensja: 22h 32m, deklinacja: -1.0 stopnia) i wschodzi ponad horyzont około godziny 2:00 rano. Jest to czas, w którym można spodziewać się ciekawego widowiska, właśnie ze względu na niskie położenie radiantu. Można wtedy zauważyć “wystrzeliwanie meteorów w górę”. Dodatkową cechą tego roju są stosunkowo długie smugi, pozostające na niebie przez “dłuższy” czas. W czasie maksimum roju, można spodziewać się ok. 60 meteorów na godzinę (ZHR=60, zmienne w granicach 45-80). Prędkość jaką osiągają “spadające gwiazdy” to około 66 km/s."
     }
   ]
 }

@@ -42,3 +42,39 @@
     align-items: center;
   }
 }
+
+.met_shower_dates {
+  background: #009273;
+  .event_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .event_name {
+      text-transform: uppercase;
+    }
+    .peak_hour {
+      font-weight: bold;
+    }
+  }
+}
+
+.hidden_desc {
+  display: none;
+}
+
+.gradient_picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description_button {
+  font-family: 'Dancing Script', cursive;
+  color: $logoColor;
+  width: 150px;
+  height: 50px;
+  border-radius: 10%;
+  background: #1f1f29;
+  font-size: 1.5rem;
+}

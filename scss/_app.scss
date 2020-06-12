@@ -42,3 +42,14 @@
     align-items: center;
   }
 }
+
+.met_shower_dates {
+  background: #009273;
+  font-family: 'Karma', serif;
+  .event_name {
+    text-transform: uppercase;
+  }
+  .peak_hour {
+    font-weight: bold;
+  }
+}

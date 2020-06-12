@@ -430,3 +430,19 @@ footer div:first-child {
   justify-content: center;
   align-items: center;
 }
+
+/* line 266, scss/main.css */
+.met_shower_dates {
+  background: #009273;
+  font-family: 'Karma', serif;
+}
+
+/* line 269, scss/main.css */
+.met_shower_dates .event_name {
+  text-transform: uppercase;
+}
+
+/* line 271, scss/main.css */
+.met_shower_dates .peak_hour {
+  font-weight: bold;
+}

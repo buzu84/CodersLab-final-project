@@ -14,18 +14,12 @@ import {
 import mapStyles from "./mapStyles";
 import AddDarkSkySpotForm from "./AddDarkSkySpotForm";
 
-function Map() {
+function Map(props) {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [lat, setLat] = useState(50.064651);
   const [lng, setLng] = useState(19.944981);
   const [spots, setSpots] = useState([]);
-  const API = "http://localhost:3000";
 
-  useEffect(() => {
-    fetch(`${API}/spots`)
-    .then(response => response.json())
-    .then(response => setSpots(response))
-  }, []);
 
   useEffect(() => {
     const listener = e => {
@@ -61,7 +55,7 @@ function Map() {
           }}
           />
 
-        {spots.map(spot => (
+        {props.spots.map(spot => (
           (spot.type === "spot") ? (
             <Marker
               key={spot.id}
@@ -120,7 +114,24 @@ function Map() {
 const MapWrapped = withScriptjs(withGoogleMap(Map));
 
 export default function FinalMap() {
+  const [spots, setSpots] = useState([]);
   const myRefForm = useRef(null);
+  const API = "http://localhost:3000";
+
+  useEffect(() => {
+    fetch(`${API}/spots`)
+    .then(response => response.json())
+    .then(response => setSpots(response))
+  }, []);
+
+  const fetchAddedSpot = () => {
+    fetch(`http://localhost:3000/spots`)
+    .then(response => response.json())
+    .then(response => {
+      setSpots(response);
+      console.log('stan rodzica aktualizacja', response);
+    })
+  }
 
   const handleShowForm = () => {
     const formToShow = document.getElementById('add_spots_form');
@@ -144,12 +155,13 @@ export default function FinalMap() {
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `100%` }} />}
               mapElement={<div style={{ height: `100%` }} />}
+              spots={spots}
             />
           </div>
         </div>
       </div>
       <div ref={myRefForm} id="add_spots_form" className="container hidden_form">
-        <AddDarkSkySpotForm />
+        <AddDarkSkySpotForm fetchSpot={fetchAddedSpot}/>
       </div>
     </>
   );

@@ -82,6 +82,10 @@ const AddDarkSkySpotForm = props => {
         setDescription('');
         setType('');
         setErrors([]);
+        if (typeof props.fetchSpot === "function"){
+          props.fetchSpot();
+          console.log("dziecko przyjmuje w props funkcje!");
+        }
       }
     })
   }

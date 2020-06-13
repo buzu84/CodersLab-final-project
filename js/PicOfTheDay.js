@@ -5,37 +5,25 @@ import "react-datepicker/dist/react-datepicker.css";
 
 
 const PicOfTheDay = () => {
+  const handleDateFormat = date => {
+    let month = String(date.getMonth() + 1);
+    let day = String(date.getDate());
+    const year = String(date.getFullYear());
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    return `${year}-${month}-${day}`;;
+  }
+
   const [picture, setPicture] = useState("");
-  const [currentDate, setCurrentDate] = useState(new Date().toISOString().split('T')[0]);
-  // const [errors, setErrors] = useState([]);
+  const [currentDate, setCurrentDate] = useState(handleDateFormat(new Date()));
 
   useEffect(() => {
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&date=${currentDate}`)
     .then(response => response.json())
     .then(json => setPicture(json))
   }, [currentDate]);
-
-  // const changeDate = e => {
-  //   e.preventDefault();
-  //   let dateFromInput = document.getElementById('pic_date').value;
-  //   const validationErrors = validate();
-  //   if (validationErrors.length !== 0) {
-  //     setErrors(validationErrors);
-  //   } else {
-  //     setCurrentDate(dateFromInput);
-  //     setErrors([]);
-  //   }
-  // };
-
-  // const validate = () => {
-  //   const date = document.getElementById('pic_date').value;
-  //   const validationErrors = [];
-  //   const regEx = /^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$/;
-  //   if (!date.match(regEx)) {
-  //     validationErrors.push('Podaj datę w formacie YYYY-MM-DD')
-  //   }
-  //     return validationErrors;
-  // }
 
   return (
     <div className="container NASAPic_container">
@@ -59,11 +47,11 @@ const PicOfTheDay = () => {
       <p className="pic_description">{picture.explanation}</p>
       <DatePicker
         dateFormat="yyyy-MM-dd"
-        selected={new Date()}
-        onChange={date => setCurrentDate(date.toISOString().split('T')[0])}
-        minDate={new Date("31/5/1996")}
+        selected={new Date(parseInt(currentDate.split('-')[0]), parseInt(currentDate.split('-')[1]) - 1, parseInt(currentDate.split('-')[2]))}
+        onChange={date => setCurrentDate(handleDateFormat(date))}
+        minDate={new Date(1996, 0, 1)}
         maxDate={new Date()}
-        placeholderText="NASA Picture dostępne od 31.05.1996"
+        placeholderText="NASA Picture dostępne od 1.01.1996"
       />
     </div>
   );

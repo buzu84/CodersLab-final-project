@@ -398,14 +398,16 @@ footer div:first-child {
 
 /* line 242, scss/main.css */
 .NASAPic_container .NASAPic {
+  padding-top: 2rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-/* line 247, scss/main.css */
+/* line 248, scss/main.css */
 .NASAPic_container .photo {
+  padding-top: 2rem;
   height: 500px;
   width: 700px;
   display: block;
@@ -413,26 +415,34 @@ footer div:first-child {
   margin-right: auto;
 }
 
-/* line 253, scss/main.css */
+/* line 255, scss/main.css */
 .NASAPic_container .pic_description {
+  padding-top: 2.5rem;
   padding-left: 5rem;
   padding-right: 5rem;
   text-align: center;
 }
 
-/* line 257, scss/main.css */
+/* line 260, scss/main.css */
 .NASAPic_container .pic_date {
+  font-weight: bold;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* line 262, scss/main.css */
+/* line 266, scss/main.css */
+.NASAPic_container .date_picker {
+  padding-top: 2rem;
+}
+
+/* line 269, scss/main.css */
 .met_shower_dates {
   background: #009273;
 }
 
-/* line 264, scss/main.css */
+/* line 271, scss/main.css */
 .met_shower_dates .event_element {
   display: flex;
   justify-content: center;
@@ -440,29 +450,29 @@ footer div:first-child {
   flex-direction: column;
 }
 
-/* line 269, scss/main.css */
+/* line 276, scss/main.css */
 .met_shower_dates .event_element .event_name {
   text-transform: uppercase;
 }
 
-/* line 271, scss/main.css */
+/* line 278, scss/main.css */
 .met_shower_dates .event_element .peak_hour {
   font-weight: bold;
 }
 
-/* line 274, scss/main.css */
+/* line 281, scss/main.css */
 .hidden_desc {
   display: none;
 }
 
-/* line 277, scss/main.css */
+/* line 284, scss/main.css */
 .gradient_picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 282, scss/main.css */
+/* line 289, scss/main.css */
 .description_button {
   font-family: 'Dancing Script', cursive;
   color: gold;

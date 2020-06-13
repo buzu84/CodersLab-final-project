@@ -46,6 +46,7 @@ const PicOfTheDay = () => {
       )}
       <p className="pic_description">{picture.explanation}</p>
       <div className="pic_date">
+        <p className="date_picker">Może chciałbyś zobaczyć zdjęcia z innych dni? (YYYY-MM-DD): </p>
         <DatePicker
           dateFormat="yyyy-MM-dd"
           selected={new Date(parseInt(currentDate.split('-')[0]), parseInt(currentDate.split('-')[1]) - 1, parseInt(currentDate.split('-')[2]))}

@@ -15,12 +15,14 @@
     font-size: 2rem;
   }
   .NASAPic {
+    padding-top: 2rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
   .photo {
+    padding-top: 2rem;
     height: 500px;
     width: 700px;
     display: block;
@@ -28,18 +30,20 @@
     margin-right: auto;
   }
   .pic_description {
+    padding-top: 2.5rem;
     padding-left: 5rem;
     padding-right: 5rem;
     text-align: center;
   }
   .pic_date {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .date_picker {
+    padding-top: 2rem;
   }
 }
 

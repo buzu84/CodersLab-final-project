@@ -1,8 +1,27 @@
+.button_container {
+  background: #009273;
+  position: relative;
+.show_form_btn {
+  font-family: 'Dancing Script', cursive;
+  color: $logoColor;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: #1f1f29;
+  font-size: 1rem;
+  }
+}
+
 .map_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #009273;
+  // background: #009273;
 }
 
 .NASAPic_container {
@@ -81,4 +100,48 @@
   border-radius: 10%;
   background: #1f1f29;
   font-size: 1.5rem;
+}
+
+.hidden_form {
+  display: none;
+}
+.visible_form {
+  background: #009273;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .form_errors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form_field {
+    background: $logoColor;
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+  .form_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .form_label {
+      font-weight: bold;
+    }
+    .form_btn {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-family: 'Dancing Script', cursive;
+      color: $logoColor;
+      width: 100px;
+      height: 30px;
+      border-radius: 10%;
+      background: #1f1f29;
+      font-size: 1.2rem;
+    }
+  }
 }

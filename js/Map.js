@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   withGoogleMap,
   withScriptjs,
@@ -8,6 +8,7 @@ import {
 } from "react-google-maps";
 
 import mapStyles from "./mapStyles";
+import AddDarkSkySpotForm from "./AddDarkSkySpotForm";
 
 function Map() {
   const [selectedSpot, setSelectedSpot] = useState(null);
@@ -115,16 +116,37 @@ function Map() {
 const MapWrapped = withScriptjs(withGoogleMap(Map));
 
 export default function FinalMap() {
+  const myRefForm = useRef(null);
+
+  const handleShowForm = () => {
+    const formToShow = document.getElementById('add_spots_form');
+
+    if (formToShow.classList.contains('hidden_form')) {
+      formToShow.classList.remove('hidden_form')
+    } else {
+      formToShow.classList.add('hidden_form')
+    }
+    window.scrollTo(0, myRefForm.current.offsetTop);
+  }
+
   return (
-    <div className="map_container">
-      <div style={{ width: "80vw", height: "85vh" }}>
-        <MapWrapped
-          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`}
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `100%` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-        />
+    <>
+      <div className="container button_container">
+        <button onClick={handleShowForm} className="show_form_btn">Dodaj miejsce</button>
+        <div className="map_container">
+          <div style={{ width: "80vw", height: "88vh" }}>
+            <MapWrapped
+              googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`}
+              loadingElement={<div style={{ height: `100%` }} />}
+              containerElement={<div style={{ height: `100%` }} />}
+              mapElement={<div style={{ height: `100%` }} />}
+            />
+          </div>
+        </div>
       </div>
-    </div>
+      <div ref={myRefForm} id="add_spots_form" className="container hidden_form">
+        <AddDarkSkySpotForm />
+      </div>
+    </>
   );
 }

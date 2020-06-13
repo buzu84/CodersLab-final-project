@@ -45,14 +45,16 @@ const PicOfTheDay = () => {
         />
       )}
       <p className="pic_description">{picture.explanation}</p>
-      <DatePicker
-        dateFormat="yyyy-MM-dd"
-        selected={new Date(parseInt(currentDate.split('-')[0]), parseInt(currentDate.split('-')[1]) - 1, parseInt(currentDate.split('-')[2]))}
-        onChange={date => setCurrentDate(handleDateFormat(date))}
-        minDate={new Date(1996, 0, 1)}
-        maxDate={new Date()}
-        placeholderText="NASA Picture dostępne od 1.01.1996"
-      />
+      <div className="pic_date">
+        <DatePicker
+          dateFormat="yyyy-MM-dd"
+          selected={new Date(parseInt(currentDate.split('-')[0]), parseInt(currentDate.split('-')[1]) - 1, parseInt(currentDate.split('-')[2]))}
+          onChange={date => setCurrentDate(handleDateFormat(date))}
+          minDate={new Date(1996, 0, 1)}
+          maxDate={new Date()}
+          placeholderText="NASA Picture dostępne od 1.01.1996"
+        />
+      </div>
     </div>
   );
 }

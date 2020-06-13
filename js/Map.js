@@ -1,3 +1,7 @@
+// if (cars === null) {
+//         return <h1>Trwa wczytywanie...</h1>
+//     }
+
 import React, { useState, useEffect, useRef } from "react";
 import {
   withGoogleMap,

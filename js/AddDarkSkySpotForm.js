@@ -31,18 +31,14 @@ const AddDarkSkySpotForm = () => {
       setErrors(validationErrors);
       window.scrollTo(0, myErrorRef.current.offsetTop);
       // scroll nie dziala!!!
-      console.log("test");
-
     } else {
-      return null;
-      // createSpot();
+      createSpot();
     }
 
   }
   const validate = () => {
     const validationErrors = [];
     const letters = /^[A-Za-z]+$/;
-    console.log(name);
     if (!name || name.length < 5 || !name.match(letters)) {
         validationErrors.push('Nazwa powinna składać się z min 5 liter!')
     }
@@ -60,9 +56,36 @@ const AddDarkSkySpotForm = () => {
     }
     return validationErrors;
   }
-  const createSpot = () => {
 
+  const createSpot = () => {
+    const url = 'http://localhost:3000/spots';
+    const spot = {
+      name,
+      lat: parseFloat(lat),
+      lng: parseFloat(lng),
+      description,
+      type
+    }
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(spot)
+    })
+      .then(response => {
+      if (response.status === 201) {
+        setName('');
+        setLat('');
+        setLng('');
+        setDescription('');
+        setType('');
+        setErrors([]);
+      }
+    })
   }
+
   return (
     <div className="container visible_form">
       <fieldset className="form_field">

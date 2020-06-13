@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const AddDarkSkySpotForm = () => {
-  const [name, setName] = useState("dupa");
+  const [name, setName] = useState();
   const [lat, setLat] = useState();
   const [lng, setLng] = useState();
   const [description, setDescription] = useState();
@@ -10,7 +10,6 @@ const AddDarkSkySpotForm = () => {
   const myErrorRef = useRef(null);
 
   const handleNameChange = e => {
-    console.log("test ",e.target.value)
     setName(e.target.value);
   }
   const handleLatChange = e => {
@@ -44,17 +43,20 @@ const AddDarkSkySpotForm = () => {
     const validationErrors = [];
     const letters = /^[A-Za-z]+$/;
     console.log(name);
-    if (!name || name.length <= 5 || !name.match(letters)) {
+    if (!name || name.length < 5 || !name.match(letters)) {
         validationErrors.push('Nazwa powinna składać się z min 5 liter!')
     }
     if (!lat || isNaN(lat) || !(lat >= -90 && lat <= 90)) {
         validationErrors.push('Podaj szerokość w prawidłowym zasiegu(-90 do 90)!')
     }
-    if (!lng || isNaN(lng) || !(lng >= -90 && lng <= 90)) {
+    if (!lng || isNaN(lng) || !(lng >= -180 && lng <= 180)) {
         validationErrors.push('Podaj długość w prawidłowym zasiegu(-180 do 180)!')
     }
     if (!description || description.length <= 20 || !description.match(letters)) {
         validationErrors.push('Dodaj opis składający sięz min 20 liter!')
+    }
+    if (!type) {
+        validationErrors.push('Wybierz rodzaj miejscówki!')
     }
     return validationErrors;
   }

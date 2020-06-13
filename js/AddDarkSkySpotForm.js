@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const AddDarkSkySpotForm = () => {
-  const [name, setName] = useState();
-  const [lat, setLat] = useState();
-  const [lng, setLng] = useState();
-  const [description, setDescription] = useState();
-  const [type, setType] = useState();
+const AddDarkSkySpotForm = props => {
+  const [name, setName] = useState('');
+  const [lat, setLat] = useState('');
+  const [lng, setLng] = useState('');
+  const [description, setDescription] = useState('');
+  const [type, setType] = useState('');
   const [errors, setErrors] = useState([]);
   const myErrorRef = useRef(null);
 

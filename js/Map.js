@@ -1,7 +1,3 @@
-// if (cars === null) {
-//         return <h1>Trwa wczytywanie...</h1>
-//     }
-
 import React, { useState, useEffect, useRef } from "react";
 import {
   withGoogleMap,
@@ -13,6 +9,7 @@ import {
 
 import mapStyles from "./mapStyles";
 import AddDarkSkySpotForm from "./AddDarkSkySpotForm";
+import Spinner from "./Spinner";
 
 function Map(props) {
   const [selectedSpot, setSelectedSpot] = useState(null);
@@ -41,6 +38,10 @@ function Map(props) {
     });
   }, []);
 
+  if (props.spots === []) {
+          return <Spinner />
+      }
+
   return (
     <>
       <GoogleMap
@@ -67,7 +68,7 @@ function Map(props) {
                 setSelectedSpot(spot);
               }}
               icon={{
-                url: `/favicon-16x16.png`,
+                url: `images/favicon/favicon-16x16.png`,
                 scaledSize: new window.google.maps.Size(20, 20)
               }}
             />
@@ -82,7 +83,7 @@ function Map(props) {
                 setSelectedSpot(spot);
               }}
               icon={{
-                url: `/star.png`,
+                url: `images/favicon/star.png`,
                 scaledSize: new window.google.maps.Size(20, 20)
               }}
             />

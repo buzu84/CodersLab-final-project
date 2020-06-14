@@ -170,6 +170,7 @@ export default function FinalMap() {
           </div>
         </div>
       </div>
+      <Spinner />
       <div ref={myRefForm} id="add_spots_form" className="container hidden_form">
         <AddDarkSkySpotForm fetchSpot={fetchAddedSpot} hideForm={handleShowFormBtn}/>
       </div>

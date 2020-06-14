@@ -129,7 +129,6 @@ export default function FinalMap() {
     .then(response => response.json())
     .then(response => {
       setSpots(response);
-      console.log('stan rodzica aktualizacja', response);
     })
   }
 
@@ -142,6 +141,16 @@ export default function FinalMap() {
       formToShow.classList.add('hidden_form')
     }
     window.scrollTo(0, myRefForm.current.offsetTop);
+  }
+
+  const handleShowFormBtn = () => {
+    const formToShow = document.getElementById('add_spots_form');
+
+    if (formToShow.classList.contains('hidden_form')) {
+      formToShow.classList.remove('hidden_form')
+    } else {
+      formToShow.classList.add('hidden_form')
+    }
   }
 
   return (
@@ -161,7 +170,7 @@ export default function FinalMap() {
         </div>
       </div>
       <div ref={myRefForm} id="add_spots_form" className="container hidden_form">
-        <AddDarkSkySpotForm fetchSpot={fetchAddedSpot}/>
+        <AddDarkSkySpotForm fetchSpot={fetchAddedSpot} hideForm={handleShowFormBtn}/>
       </div>
     </>
   );

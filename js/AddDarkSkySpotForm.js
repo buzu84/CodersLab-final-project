@@ -33,6 +33,9 @@ const AddDarkSkySpotForm = props => {
       // scroll nie dziala!!!
     } else {
       createSpot();
+      if (typeof props.hideForm === "function"){
+        props.hideForm();
+      }
     }
 
   }
@@ -84,7 +87,6 @@ const AddDarkSkySpotForm = props => {
         setErrors([]);
         if (typeof props.fetchSpot === "function"){
           props.fetchSpot();
-          console.log("dziecko przyjmuje w props funkcje!");
         }
       }
     })

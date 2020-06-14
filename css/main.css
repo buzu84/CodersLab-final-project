@@ -375,20 +375,41 @@ footer div:first-child {
 }
 
 /* line 228, scss/main.css */
+.button_container {
+  background: #009273;
+  position: relative;
+}
+
+/* line 231, scss/main.css */
+.button_container .show_form_btn {
+  font-family: 'Dancing Script', cursive;
+  color: gold;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: #1f1f29;
+  font-size: 1rem;
+}
+
+/* line 245, scss/main.css */
 .map_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #009273;
 }
 
-/* line 234, scss/main.css */
+/* line 250, scss/main.css */
 .NASAPic_container {
   background: #009273;
   font-family: 'Karma', serif;
 }
 
-/* line 237, scss/main.css */
+/* line 253, scss/main.css */
 .NASAPic_container .NASAHeader {
   padding-top: 2rem;
   text-transform: uppercase;
@@ -396,7 +417,7 @@ footer div:first-child {
   font-size: 2rem;
 }
 
-/* line 242, scss/main.css */
+/* line 258, scss/main.css */
 .NASAPic_container .NASAPic {
   padding-top: 2rem;
   display: block;
@@ -405,7 +426,7 @@ footer div:first-child {
   width: 50%;
 }
 
-/* line 248, scss/main.css */
+/* line 264, scss/main.css */
 .NASAPic_container .photo {
   padding-top: 2rem;
   height: 500px;
@@ -415,7 +436,7 @@ footer div:first-child {
   margin-right: auto;
 }
 
-/* line 255, scss/main.css */
+/* line 271, scss/main.css */
 .NASAPic_container .pic_description {
   padding-top: 2.5rem;
   padding-left: 5rem;
@@ -423,7 +444,7 @@ footer div:first-child {
   text-align: center;
 }
 
-/* line 260, scss/main.css */
+/* line 276, scss/main.css */
 .NASAPic_container .pic_date {
   font-weight: bold;
   display: flex;
@@ -432,17 +453,17 @@ footer div:first-child {
   align-items: center;
 }
 
-/* line 266, scss/main.css */
+/* line 282, scss/main.css */
 .NASAPic_container .date_picker {
   padding-top: 2rem;
 }
 
-/* line 269, scss/main.css */
+/* line 285, scss/main.css */
 .met_shower_dates {
   background: #009273;
 }
 
-/* line 271, scss/main.css */
+/* line 287, scss/main.css */
 .met_shower_dates .event_element {
   display: flex;
   justify-content: center;
@@ -450,29 +471,29 @@ footer div:first-child {
   flex-direction: column;
 }
 
-/* line 276, scss/main.css */
+/* line 292, scss/main.css */
 .met_shower_dates .event_element .event_name {
   text-transform: uppercase;
 }
 
-/* line 278, scss/main.css */
+/* line 294, scss/main.css */
 .met_shower_dates .event_element .peak_hour {
   font-weight: bold;
 }
 
-/* line 281, scss/main.css */
+/* line 297, scss/main.css */
 .hidden_desc {
   display: none;
 }
 
-/* line 284, scss/main.css */
+/* line 300, scss/main.css */
 .gradient_picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 289, scss/main.css */
+/* line 305, scss/main.css */
 .description_button {
   font-family: 'Dancing Script', cursive;
   color: gold;
@@ -481,4 +502,61 @@ footer div:first-child {
   border-radius: 10%;
   background: #1f1f29;
   font-size: 1.5rem;
+}
+
+/* line 314, scss/main.css */
+.hidden_form {
+  display: none;
+}
+
+/* line 317, scss/main.css */
+.visible_form {
+  background: #009273;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* line 321, scss/main.css */
+.visible_form .form_errors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 326, scss/main.css */
+.visible_form .form_field {
+  background: gold;
+  width: 30%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+/* line 334, scss/main.css */
+.visible_form .form_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 339, scss/main.css */
+.visible_form .form_flex .form_label {
+  font-weight: bold;
+}
+
+/* line 341, scss/main.css */
+.visible_form .form_flex .form_btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Dancing Script', cursive;
+  color: gold;
+  width: 100px;
+  height: 30px;
+  border-radius: 10%;
+  background: #1f1f29;
+  font-size: 1.2rem;
 }

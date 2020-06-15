@@ -19,7 +19,7 @@ class Spinner extends React.Component {
 
   render() {
     return (
-      <div className="sweet-loading">
+      <div className="sweet-loading spinner">
         <RingLoader
           css={override}
           size={150}

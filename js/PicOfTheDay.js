@@ -24,7 +24,10 @@ const PicOfTheDay = () => {
   useEffect(() => {
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&date=${currentDate}`)
     .then(response => response.json())
-    .then(json => setPicture(json))
+    .then(json => {
+      setPicture(json);
+      setIsLoading(false);
+    })
   }, [currentDate]);
 
   useEffect(() => {
@@ -32,8 +35,12 @@ const PicOfTheDay = () => {
   }, [currentDate]);
 
   if (picture === "") {
-          return <Spinner />
-      }
+    return <Spinner />
+    }
+  if (isLoading === true) {
+    return <Spinner />
+    }
+
   return (
     <div className="container NASAPic_container">
       <h3 className="NASAHeader" >{picture.title}</h3>

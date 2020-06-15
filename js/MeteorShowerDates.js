@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
+import Spinner from "./Spinner";
 
 
 
@@ -22,7 +23,9 @@ const MeteorShowerDates = () => {
       eventToShow.classList.add('hidden_desc')
     }
   }
-
+  if (events === []) {
+    return <Spinner />
+    }
   return (
     <div className="container met_shower_dates">
       <ul>

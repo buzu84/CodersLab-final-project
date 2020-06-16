@@ -10,6 +10,7 @@ import {
 import mapStyles from "./mapStyles";
 import AddDarkSkySpotForm from "./AddDarkSkySpotForm";
 import Spinner from "./Spinner";
+import Message from "./Message";
 
 function Map(props) {
   const [selectedSpot, setSelectedSpot] = useState(null);
@@ -152,9 +153,10 @@ export default function FinalMap() {
       formToShow.classList.add('hidden_form')
     }
   }
-  
+
   return (
     <>
+      <Message />
       <div className="container button_container">
         <button onClick={handleShowForm} className="show_form_btn">Dodaj miejsce</button>
         <div className="map_container">

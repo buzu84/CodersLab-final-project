@@ -1,7 +1,3 @@
-// if (cars === null) {
-//         return <h1>Trwa wczytywanie...</h1>
-//     }
-
 import React, { useState, useEffect, useRef } from "react";
 import {
   withGoogleMap,
@@ -13,13 +9,13 @@ import {
 
 import mapStyles from "./mapStyles";
 import AddDarkSkySpotForm from "./AddDarkSkySpotForm";
+import Spinner from "./Spinner";
 
 function Map(props) {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [lat, setLat] = useState(50.064651);
   const [lng, setLng] = useState(19.944981);
   const [spots, setSpots] = useState([]);
-
 
   useEffect(() => {
     const listener = e => {
@@ -40,6 +36,10 @@ function Map(props) {
       setLng(position.coords.longitude);
     });
   }, []);
+
+  if (props.spots === []) {
+    return <Spinner />
+  }
 
   return (
     <>
@@ -67,7 +67,7 @@ function Map(props) {
                 setSelectedSpot(spot);
               }}
               icon={{
-                url: `/favicon-16x16.png`,
+                url: `images/favicon/favicon-16x16.png`,
                 scaledSize: new window.google.maps.Size(20, 20)
               }}
             />
@@ -82,7 +82,7 @@ function Map(props) {
                 setSelectedSpot(spot);
               }}
               icon={{
-                url: `/star.png`,
+                url: `images/favicon/star.png`,
                 scaledSize: new window.google.maps.Size(20, 20)
               }}
             />
@@ -152,7 +152,7 @@ export default function FinalMap() {
       formToShow.classList.add('hidden_form')
     }
   }
-
+  
   return (
     <>
       <div className="container button_container">

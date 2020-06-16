@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Spinner from "./Spinner";
 
 
 const PicOfTheDay = () => {
@@ -18,12 +19,27 @@ const PicOfTheDay = () => {
 
   const [picture, setPicture] = useState("");
   const [currentDate, setCurrentDate] = useState(handleDateFormat(new Date()));
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&date=${currentDate}`)
     .then(response => response.json())
-    .then(json => setPicture(json))
+    .then(json => {
+      setPicture(json);
+      setIsLoading(false);
+    })
   }, [currentDate]);
+
+  useEffect(() => {
+    setIsLoading(true);
+  }, [currentDate]);
+
+  if (picture === "") {
+    return <Spinner />
+    }
+  if (isLoading === true) {
+    return <Spinner />
+    }
 
   return (
     <div className="container NASAPic_container">

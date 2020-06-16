@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import {
   HashRouter,
@@ -10,18 +10,16 @@ import {
 import Index from './Index';
 import Astro from './Astro';
 
-class App extends Component {
-  render() {
-    return (
-      <HashRouter>
-        <div>
-           <Switch>
-             <Route exact path='/' component={Index} />
-             <Route path='/astrolabium' component={Astro} />
-           </Switch>
-         </div>
-       </HashRouter>
-    )
-  }
+const App = () => {
+  return (
+    <HashRouter>
+      <div>
+         <Switch>
+           <Route exact path='/' component={Index} />
+           <Route path='/astrolabium' component={Astro} />
+         </Switch>
+       </div>
+     </HashRouter>
+  )
 }
 ReactDOM.render(<App />, document.getElementById("app"));

@@ -560,3 +560,12 @@ footer div:first-child {
   background: #1f1f29;
   font-size: 1.2rem;
 }
+
+/* line 352, scss/main.css */
+.spinner {
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #009273;
+}

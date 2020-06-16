@@ -16,16 +16,6 @@ function Map(props) {
   const [lat, setLat] = useState(50.064651);
   const [lng, setLng] = useState(19.944981);
   const [spots, setSpots] = useState([]);
-  // const [showSpinner, setShowSpinner] = useState(true);
-
-
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //       console.log('Our data is fetched');
-  //       setShowSpinner(false);
-  //     }, 3000)
-  // }, []);
 
   useEffect(() => {
     const listener = e => {
@@ -50,9 +40,6 @@ function Map(props) {
   if (props.spots === []) {
     return <Spinner />
   }
-  // if (showSpinner === true) {
-  //   return <Spinner />
-  // }
 
   return (
     <>
@@ -165,7 +152,7 @@ export default function FinalMap() {
       formToShow.classList.add('hidden_form')
     }
   }
-
+  
   return (
     <>
       <div className="container button_container">

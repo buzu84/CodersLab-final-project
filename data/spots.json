@@ -567,6 +567,54 @@
       "description": "vfdhvbhdsbhfvghvgfgdvjzgsgdhvjvfsdvfds",
       "type": "spot",
       "id": 71
+    },
+    {
+      "name": "nazwa",
+      "lat": 44,
+      "lng": 11,
+      "description": "hfdhfhgdfdhsgjghdfhsgjfrysugfhdkgfhdgshgjfdsg",
+      "type": "spot",
+      "id": 72
+    },
+    {
+      "name": "Pikok",
+      "lat": 44,
+      "lng": 33,
+      "description": "gdfjhjkgkjsghjfbvhjdbfvksyvbervbhbfhbvhsdkvbhsdvb",
+      "type": "observatory",
+      "id": 73
+    },
+    {
+      "name": "ggggrrr",
+      "lat": 44,
+      "lng": 22,
+      "description": "gfdsvdfsvsfdvbsjhvbhfsvgsdt",
+      "type": "spot",
+      "id": 74
+    },
+    {
+      "name": "ggggggg",
+      "lat": 33,
+      "lng": 22,
+      "description": "fjdvhfbshkvhrbvhjbhjbvjhbkhvbhfbhbvhffgfdd",
+      "type": "observatory",
+      "id": 75
+    },
+    {
+      "name": "Pikok",
+      "lat": 22,
+      "lng": 22,
+      "description": "fmkelmrfkwnjnfjwhrfhbwhbfhrebfhbejwfhw",
+      "type": "observatory",
+      "id": 76
+    },
+    {
+      "name": "Magdalena",
+      "lat": 44,
+      "lng": 33,
+      "description": "ffjnehjbfhebwfhbhrfbhwbfhbwhbfgewbgbfgrf",
+      "type": "spot",
+      "id": 77
     }
   ],
   "events": [

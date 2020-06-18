@@ -488,13 +488,20 @@ footer div:first-child {
 }
 
 /* line 301, scss/main.css */
+.img_desc {
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* line 306, scss/main.css */
 .gradient_picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 306, scss/main.css */
+/* line 311, scss/main.css */
 .description_button {
   font-family: 'Dancing Script', cursive;
   color: gold;
@@ -505,19 +512,19 @@ footer div:first-child {
   font-size: 1.5rem;
 }
 
-/* line 315, scss/main.css */
+/* line 320, scss/main.css */
 .hidden_form {
   display: none;
 }
 
-/* line 318, scss/main.css */
+/* line 323, scss/main.css */
 .visible_form {
   background: #009273;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-/* line 322, scss/main.css */
+/* line 327, scss/main.css */
 .visible_form .form_errors {
   display: flex;
   justify-content: center;
@@ -525,7 +532,7 @@ footer div:first-child {
   flex-direction: column;
 }
 
-/* line 327, scss/main.css */
+/* line 332, scss/main.css */
 .visible_form .form_field {
   background: gold;
   width: 30%;
@@ -536,7 +543,7 @@ footer div:first-child {
   border-radius: 15px;
 }
 
-/* line 335, scss/main.css */
+/* line 340, scss/main.css */
 .visible_form .form_flex {
   display: flex;
   justify-content: center;
@@ -544,12 +551,12 @@ footer div:first-child {
   flex-direction: column;
 }
 
-/* line 340, scss/main.css */
+/* line 345, scss/main.css */
 .visible_form .form_flex .form_label {
   font-weight: bold;
 }
 
-/* line 342, scss/main.css */
+/* line 347, scss/main.css */
 .visible_form .form_flex .form_btn {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -562,7 +569,7 @@ footer div:first-child {
   font-size: 1.2rem;
 }
 
-/* line 353, scss/main.css */
+/* line 358, scss/main.css */
 .spinner {
   height: 88vh;
   display: flex;
@@ -571,7 +578,7 @@ footer div:first-child {
   background: #009273;
 }
 
-/* line 360, scss/main.css */
+/* line 365, scss/main.css */
 .flash_message {
   border: black solid 2px;
   color: black;

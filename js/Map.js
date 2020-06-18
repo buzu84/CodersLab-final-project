@@ -135,10 +135,13 @@ export default function FinalMap() {
 
     })
   }
-  // za drugim razem flash nie wyswietla sie, stan?
-  // useEffect(() => {
-  //   setSpotAdded(false);
-  // }, [spotAdded]);
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setSpotAdded(false);
+    }, 5000)
+
+  }, [spotAdded]);
 
   const handleShowForm = () => {
     const formToShow = document.getElementById('add_spots_form');

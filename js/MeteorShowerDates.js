@@ -35,7 +35,7 @@ const MeteorShowerDates = () => {
               <h2 className="event_name"><img src="images/favicon/star.png" className="pr-30"/>{event.date}  {event.name}</h2>
               <p className="peak_hour">Godzina szczytu roju meteorytów {event.peakHour} (ECT)</p>
               <input type="submit" value="Pokaż/ukryj opis" className="description_button" onClick={e => handleShowDescription(event.id, e)} />
-              <p id={`description_${event.id}`} className="hidden_desc">
+              <p id={`description_${event.id}`} className="hidden_desc img_desc">
               {event.description}
               {event.source ? (
                 <img

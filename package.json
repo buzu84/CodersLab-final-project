@@ -43,6 +43,7 @@
     "whatwg-fetch": "^3.0.0",
     "dotenv": "^8.2.0",
     "react-datepicker": "^3.0.0",
-    "react-spinners": "^0.8.3"
+    "react-spinners": "^0.8.3",
+    "react-flash-message": "^1.0.2"
   }
 }

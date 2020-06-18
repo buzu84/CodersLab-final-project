@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // background: #009273;
+  flex-direction: column;
 }
 
 .NASAPic_container {
@@ -84,6 +84,12 @@
 
 .hidden_desc {
   display: none;
+}
+
+.img_desc {
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .gradient_picture {
@@ -152,4 +158,20 @@
   justify-content: center;
   align-items: center;
   background: #009273;
+}
+
+.flash_message {
+  border: black solid 2px;
+  color: black;
+  width: 400px;
+  height: 35px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  background: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }

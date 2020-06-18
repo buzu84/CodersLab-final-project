@@ -401,15 +401,16 @@ footer div:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-/* line 250, scss/main.css */
+/* line 251, scss/main.css */
 .NASAPic_container {
   background: #009273;
   font-family: 'Karma', serif;
 }
 
-/* line 253, scss/main.css */
+/* line 254, scss/main.css */
 .NASAPic_container .NASAHeader {
   padding-top: 2rem;
   text-transform: uppercase;
@@ -417,7 +418,7 @@ footer div:first-child {
   font-size: 2rem;
 }
 
-/* line 258, scss/main.css */
+/* line 259, scss/main.css */
 .NASAPic_container .NASAPic {
   padding-top: 2rem;
   display: block;
@@ -426,7 +427,7 @@ footer div:first-child {
   width: 50%;
 }
 
-/* line 264, scss/main.css */
+/* line 265, scss/main.css */
 .NASAPic_container .photo {
   padding-top: 2rem;
   height: 500px;
@@ -436,7 +437,7 @@ footer div:first-child {
   margin-right: auto;
 }
 
-/* line 271, scss/main.css */
+/* line 272, scss/main.css */
 .NASAPic_container .pic_description {
   padding-top: 2.5rem;
   padding-left: 5rem;
@@ -444,7 +445,7 @@ footer div:first-child {
   text-align: center;
 }
 
-/* line 276, scss/main.css */
+/* line 277, scss/main.css */
 .NASAPic_container .pic_date {
   font-weight: bold;
   display: flex;
@@ -453,17 +454,17 @@ footer div:first-child {
   align-items: center;
 }
 
-/* line 282, scss/main.css */
+/* line 283, scss/main.css */
 .NASAPic_container .date_picker {
   padding-top: 2rem;
 }
 
-/* line 285, scss/main.css */
+/* line 286, scss/main.css */
 .met_shower_dates {
   background: #009273;
 }
 
-/* line 287, scss/main.css */
+/* line 288, scss/main.css */
 .met_shower_dates .event_element {
   display: flex;
   justify-content: center;
@@ -471,29 +472,29 @@ footer div:first-child {
   flex-direction: column;
 }
 
-/* line 292, scss/main.css */
+/* line 293, scss/main.css */
 .met_shower_dates .event_element .event_name {
   text-transform: uppercase;
 }
 
-/* line 294, scss/main.css */
+/* line 295, scss/main.css */
 .met_shower_dates .event_element .peak_hour {
   font-weight: bold;
 }
 
-/* line 297, scss/main.css */
+/* line 298, scss/main.css */
 .hidden_desc {
   display: none;
 }
 
-/* line 300, scss/main.css */
+/* line 301, scss/main.css */
 .gradient_picture {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 305, scss/main.css */
+/* line 306, scss/main.css */
 .description_button {
   font-family: 'Dancing Script', cursive;
   color: gold;
@@ -504,19 +505,19 @@ footer div:first-child {
   font-size: 1.5rem;
 }
 
-/* line 314, scss/main.css */
+/* line 315, scss/main.css */
 .hidden_form {
   display: none;
 }
 
-/* line 317, scss/main.css */
+/* line 318, scss/main.css */
 .visible_form {
   background: #009273;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-/* line 321, scss/main.css */
+/* line 322, scss/main.css */
 .visible_form .form_errors {
   display: flex;
   justify-content: center;
@@ -524,7 +525,7 @@ footer div:first-child {
   flex-direction: column;
 }
 
-/* line 326, scss/main.css */
+/* line 327, scss/main.css */
 .visible_form .form_field {
   background: gold;
   width: 30%;
@@ -535,7 +536,7 @@ footer div:first-child {
   border-radius: 15px;
 }
 
-/* line 334, scss/main.css */
+/* line 335, scss/main.css */
 .visible_form .form_flex {
   display: flex;
   justify-content: center;
@@ -543,12 +544,12 @@ footer div:first-child {
   flex-direction: column;
 }
 
-/* line 339, scss/main.css */
+/* line 340, scss/main.css */
 .visible_form .form_flex .form_label {
   font-weight: bold;
 }
 
-/* line 341, scss/main.css */
+/* line 342, scss/main.css */
 .visible_form .form_flex .form_btn {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -561,11 +562,28 @@ footer div:first-child {
   font-size: 1.2rem;
 }
 
-/* line 352, scss/main.css */
+/* line 353, scss/main.css */
 .spinner {
   height: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #009273;
+}
+
+/* line 360, scss/main.css */
+.flash_message {
+  border: black solid 2px;
+  color: black;
+  width: 400px;
+  height: 35px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  background: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -3,7 +3,7 @@ import FlashMessage from 'react-flash-message'
 
 const Message = () => (
   <FlashMessage duration={5000}>
-    <strong>I will disapper in 5 seconds!</strong>
+    <div className="flash_message">Punkt dodany do mapy!</div>
   </FlashMessage>
 )
 

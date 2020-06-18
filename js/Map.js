@@ -116,6 +116,7 @@ const MapWrapped = withScriptjs(withGoogleMap(Map));
 
 export default function FinalMap() {
   const [spots, setSpots] = useState([]);
+  const [spotAdded, setSpotAdded] = useState(false);
   const myRefForm = useRef(null);
   const API = "http://localhost:3000";
 
@@ -130,8 +131,14 @@ export default function FinalMap() {
     .then(response => response.json())
     .then(response => {
       setSpots(response);
+      setSpotAdded(true);
+
     })
   }
+  // za drugim razem flash nie wyswietla sie, stan?
+  // useEffect(() => {
+  //   setSpotAdded(false);
+  // }, [spotAdded]);
 
   const handleShowForm = () => {
     const formToShow = document.getElementById('add_spots_form');
@@ -156,10 +163,10 @@ export default function FinalMap() {
 
   return (
     <>
-      <Message />
       <div className="container button_container">
         <button onClick={handleShowForm} className="show_form_btn">Dodaj miejsce</button>
         <div className="map_container">
+          {spotAdded ? <Message /> : null}
           <div style={{ width: "80vw", height: "88vh" }}>
             <MapWrapped
               googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`}

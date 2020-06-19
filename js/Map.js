@@ -1,3 +1,5 @@
+// key=API_KEY
+
 import React, { useState, useEffect, useRef } from "react";
 import {
   withGoogleMap,
@@ -11,6 +13,7 @@ import mapStyles from "./mapStyles";
 import AddDarkSkySpotForm from "./AddDarkSkySpotForm";
 import Spinner from "./Spinner";
 import Message from "./Message";
+
 
 function Map(props) {
   const [selectedSpot, setSelectedSpot] = useState(null);
@@ -135,7 +138,7 @@ export default function FinalMap() {
 
     })
   }
-  
+
   useEffect(() => {
     setTimeout(() => {
       setSpotAdded(false);

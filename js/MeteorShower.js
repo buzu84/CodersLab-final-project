@@ -154,8 +154,8 @@ const MeteorShower = () => {
 
   return (
     <div className="animation container">
-      <canvas id="bgCanvas"></canvas>
-      <canvas className="terrain" id="terCanvas"></canvas>
+      <canvas className="canvas_meteor" id="bgCanvas"></canvas>
+      <canvas className="canvas_meteor terrain" id="terCanvas"></canvas>
     </div>
   );
 }

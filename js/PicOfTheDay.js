@@ -3,6 +3,12 @@ import ReactDOM from "react-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Spinner from "./Spinner";
+// var googleTranslate = require('google-translate')(`${process.env.REACT__APP_GOOGLE_TRANSLATION_API_KEY}`, {});
+
+// googleTranslate.translate('My name is Brandon', 'es', function(err, translation) {
+//   console.log(translation.translatedText);
+//   // =>  Mi nombre es Brandon
+// });
 
 
 const PicOfTheDay = () => {
@@ -33,6 +39,12 @@ const PicOfTheDay = () => {
   useEffect(() => {
     setIsLoading(true);
   }, [currentDate]);
+
+  // useEffect(() => {
+  //   googleTranslate.translate('My name is Brandon', 'es', function(err, translation) {
+  //     console.log(translation.translatedText);
+  //   });
+  // }, []);
 
   if (picture === "") {
     return <Spinner />

@@ -1,5 +1,3 @@
-// key=API_KEY
-
 import React, { useState, useEffect, useRef } from "react";
 import {
   withGoogleMap,
@@ -41,7 +39,7 @@ function Map(props) {
     });
   }, []);
 
-  if (props.spots === []) {
+  if (props.spots.length === 0) {
     return <Spinner />
   }
 
@@ -135,7 +133,6 @@ export default function FinalMap() {
     .then(response => {
       setSpots(response);
       setSpotAdded(true);
-
     })
   }
 
@@ -143,7 +140,6 @@ export default function FinalMap() {
     setTimeout(() => {
       setSpotAdded(false);
     }, 5000)
-
   }, [spotAdded]);
 
   const handleShowForm = () => {

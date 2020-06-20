@@ -594,3 +594,13 @@ footer div:first-child {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* line 380, scss/main.css */
+.spinner-container {
+  position: relative;
+}
+
+/* line 383, scss/main.css */
+.spinner_map {
+  position: absolute;
+}

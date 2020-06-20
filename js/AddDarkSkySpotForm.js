@@ -9,6 +9,10 @@ const AddDarkSkySpotForm = props => {
   const [errors, setErrors] = useState([]);
   const myErrorRef = useRef(null);
 
+  useEffect(() => {
+    window.scrollTo(0, myErrorRef.current.offsetTop + myErrorRef.current.clientHeight);
+  }, [errors]);
+
   const handleNameChange = e => {
     setName(e.target.value);
   }
@@ -29,8 +33,6 @@ const AddDarkSkySpotForm = props => {
     const validationErrors = validate();
     if (validationErrors.length !== 0) {
       setErrors(validationErrors);
-      window.scrollTo(0, myErrorRef.current.offsetTop);
-      // scroll nie dziala!!!
     } else {
       createSpot();
       if (typeof props.hideForm === "function"){

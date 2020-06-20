@@ -7,6 +7,8 @@ const override = css`
   display: block;
   margin: 0 auto;
   border-color: red;
+  /* position: absolute;
+  z-index: 1; */
 `;
 
 class Spinner extends React.Component {

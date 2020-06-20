@@ -3,13 +3,6 @@ import ReactDOM from "react-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Spinner from "./Spinner";
-// var googleTranslate = require('google-translate')(`${process.env.REACT__APP_GOOGLE_TRANSLATION_API_KEY}`, {});
-
-// googleTranslate.translate('My name is Brandon', 'es', function(err, translation) {
-//   console.log(translation.translatedText);
-//   // =>  Mi nombre es Brandon
-// });
-
 
 const PicOfTheDay = () => {
   const handleDateFormat = date => {
@@ -26,32 +19,48 @@ const PicOfTheDay = () => {
   const [picture, setPicture] = useState("");
   const [currentDate, setCurrentDate] = useState(handleDateFormat(new Date()));
   const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&date=${currentDate}`)
-    .then(response => response.json())
-    .then(json => {
-      setPicture(json);
-      setIsLoading(false);
-    })
-  }, [currentDate]);
+  const [translatedPicExplanation, setTranslatedPicExplanation] = useState("");
 
   useEffect(() => {
     setIsLoading(true);
   }, [currentDate]);
 
-  // useEffect(() => {
-  //   googleTranslate.translate('My name is Brandon', 'es', function(err, translation) {
-  //     console.log(translation.translatedText);
-  //   });
-  // }, []);
+  useEffect(() => {
+    fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&date=${currentDate}`)
+    .then(response => response.json())
+    .then(json => {
+      let fromLang = 'en';
+      let toLang = 'pl';
+      let text = json.explanation;
+      let url = `https://translation.googleapis.com/language/translate/v2?key=${process.env.REACT__APP_GOOGLE_TRANSLATION_API_KEY}`;
+      url += '&q=' + encodeURI(text);
+      url += `&source=${fromLang}`;
+      url += `&target=${toLang}`;
 
-  if (picture === "") {
-    return <Spinner />
-    }
-  if (isLoading === true) {
-    return <Spinner />
-    }
+      fetch(url, {
+        method: 'GET',
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        }
+      })
+      .then(res => res.json())
+      .then((response) => {
+        setTranslatedPicExplanation(response.data.translations[0].translatedText);
+      })
+      .catch(error => {
+        console.log("There was an error with the translation request: ", error);
+      });
+      setIsLoading(false);
+    });
+  }, [currentDate]);
+
+  // if (picture === "") {
+  //   return <Spinner />
+  //   }
+  // if (isLoading === true) {
+  //   return <Spinner />
+  //   }
 
   return (
     <div className="container NASAPic_container">

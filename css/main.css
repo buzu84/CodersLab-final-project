@@ -596,11 +596,17 @@ footer div:first-child {
 }
 
 /* line 380, scss/main.css */
-.spinner-container {
-  position: relative;
-}
-
-/* line 383, scss/main.css */
-.spinner_map {
+.translate {
+  font-family: 'Dancing Script', cursive;
+  color: gold;
+  width: 150px;
+  height: 60px;
   position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: #1f1f29;
+  font-size: 1.5rem;
 }

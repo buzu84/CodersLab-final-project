@@ -15,7 +15,7 @@ const Menu = (props) => {
             <a onClick={props.propScrollFeatures}>DLACZEGO WARTO!</a>
           </li>
           <li>
-            <a onClick={props.propScrollAbout}>O MNIE</a>
+            <a onClick={props.propScrollAbout}>CO TO DESZCZ METEORYTÓW?</a>
           </li>
           <li>
             <a onClick={props.propScrollContact}>KONTAKT</a>

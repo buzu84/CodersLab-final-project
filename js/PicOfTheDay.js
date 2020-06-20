@@ -70,7 +70,6 @@ const PicOfTheDay = () => {
     });
   }, [currentDate]);
 
-
   if (picture === "") {
     return <Spinner />
     }

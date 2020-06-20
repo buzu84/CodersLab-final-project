@@ -35,9 +35,9 @@ const Carousel = () => {
       <div className="carusel-content pl-30 pr-30">
         <i className="fas fa-arrow-left leftarrow"></i>
         <ul>
-          <li className="visible"><h1>Miejsca</h1> Jesli chcesz ogladac nocne niebo, interesujesz sie astronomia, tu znajdziesz miejsca do ogladania gwiazd golym okiem... </li>
-          <li><h1>Wydarzenia</h1> Jesli chcesz znac najblizsze wydarzenia na niebie dla Twojego polozenia, takie jak deszcze meteorytow </li>
-          <li><h1>Inne</h1> oraz wiele innych-w przygotowaniu </li>
+          <li className="visible"><h1>Miejsca</h1> Jeśli lubisz oglądać nocne niebo, interesujesz sie astronomia, tu znajdziesz odpowiednie miejsca do oglądania gwiazd gołym okiem... </li>
+          <li><h1>Wydarzenia</h1> Jesli chcesz wiedzieć kiedy wybrać się na nocny spektakl deszczu meteorytów...  </li>
+          <li><h1>Obrazek dnia</h1> Codziennie nowy NASA Picture of the day oraz baza zdjęć od 1996..</li>
         </ul>
         <i className="fas fa-arrow-right rightarrow"></i>
       </div>

@@ -12,6 +12,9 @@ const MeteorShowerDates = () => {
     fetch(`${API}/events`)
     .then(response => response.json())
     .then(response => setEvents(response))
+    .catch(error => {
+      console.log("There was an error with the Meteor shower dates request: ", error);
+    });
   }, []);
 
 

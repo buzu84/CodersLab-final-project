@@ -178,15 +178,42 @@
 
 .translate {
   font-family: 'Dancing Script', cursive;
-  color: $logoColor;
+  color: black;
+  background-image: url(../images/Poland-Flag.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 150px;
-  height: 60px;
+  height: 40px;
   position: absolute;
   right: 0;
   bottom: 0;
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 10px;
-  background: #1f1f29;
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.translate_to_pl {
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  background-image: url(../images/United-Kingdom-Flag.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.map_spinner {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

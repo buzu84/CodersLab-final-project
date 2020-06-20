@@ -64,6 +64,9 @@ const PicOfTheDay = () => {
         console.log("There was an error with the translation request: ", error);
       });
 
+    })
+    .catch(error => {
+      console.log("There was an error with the NasaPic request: ", error);
     });
   }, [currentDate]);
 
@@ -77,9 +80,9 @@ const PicOfTheDay = () => {
 
   return (
     <div className="container NASAPic_container button_container">
-      <button onClick={handleTranslate} className="translate">Przetlumacz</button>
       {showTranslation ? (
         <>
+          <button onClick={handleTranslate} className="translate_to_pl">Przetlumacz</button>
           <h3 className="NASAHeader" >{translatedPicTitle}</h3>
           {picture.media_type === "image" ? (
             <img
@@ -112,6 +115,7 @@ const PicOfTheDay = () => {
         </>
       ) : (
         <>
+          <button onClick={handleTranslate} className="translate">Przetlumacz</button>
           <h3 className="NASAHeader" >{picture.title}</h3>
           {picture.media_type === "image" ? (
             <img

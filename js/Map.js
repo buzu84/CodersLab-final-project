@@ -12,6 +12,7 @@ import AddDarkSkySpotForm from "./AddDarkSkySpotForm";
 import Spinner from "./Spinner";
 import Message from "./Message";
 
+
 function Map(props) {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [lat, setLat] = useState(50.064651);
@@ -36,9 +37,10 @@ function Map(props) {
       setLat(position.coords.latitude);
       setLng(position.coords.longitude);
     });
+    return () => {};
   }, []);
 
-  if (props.spots === []) {
+  if (props.spots.length === 0) {
     return <Spinner />
   }
 
@@ -124,6 +126,9 @@ export default function FinalMap() {
     fetch(`${API}/spots`)
     .then(response => response.json())
     .then(response => setSpots(response))
+    .catch(error => {
+      console.log("There was an error with fetching spots from json request: ", error);
+    });
   }, []);
 
   const fetchAddedSpot = () => {
@@ -132,15 +137,19 @@ export default function FinalMap() {
     .then(response => {
       setSpots(response);
       setSpotAdded(true);
-
     })
+    .catch(error => {
+      console.log("There was an error with fetching `new spot added request`: ", error);
+    });
   }
-  
-  useEffect(() => {
-    setTimeout(() => {
-      setSpotAdded(false);
-    }, 5000)
 
+  useEffect(() => {
+    const setTime = setTimeout(() => {
+      setSpotAdded(false);
+    }, 5000);
+    return () => {
+      clearTimeout(setTime);
+    }
   }, [spotAdded]);
 
   const handleShowForm = () => {
@@ -170,7 +179,7 @@ export default function FinalMap() {
         <button onClick={handleShowForm} className="show_form_btn">Dodaj miejsce</button>
         <div className="map_container">
           {spotAdded ? <Message /> : null}
-          <div style={{ width: "80vw", height: "88vh" }}>
+          <div style={{ width: "80vw", height: "88vh", position: "relative" }}>
             <MapWrapped
               googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`}
               loadingElement={<div style={{ height: `100%` }} />}

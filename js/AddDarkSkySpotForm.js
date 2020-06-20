@@ -9,6 +9,10 @@ const AddDarkSkySpotForm = props => {
   const [errors, setErrors] = useState([]);
   const myErrorRef = useRef(null);
 
+  useEffect(() => {
+    window.scrollTo(0, myErrorRef.current.offsetTop + myErrorRef.current.clientHeight);
+  }, [errors]);
+
   const handleNameChange = e => {
     setName(e.target.value);
   }
@@ -29,8 +33,6 @@ const AddDarkSkySpotForm = props => {
     const validationErrors = validate();
     if (validationErrors.length !== 0) {
       setErrors(validationErrors);
-      window.scrollTo(0, myErrorRef.current.offsetTop);
-      // scroll nie dziala!!!
     } else {
       createSpot();
       if (typeof props.hideForm === "function"){
@@ -41,9 +43,10 @@ const AddDarkSkySpotForm = props => {
   }
   const validate = () => {
     const validationErrors = [];
-    const letters = /^[A-Za-z]+$/;
+    // const letters = /^[A-Za-z]+$/;
+    const letters = /(?!^\d+$)^.+$/;
     if (!name || name.length < 5 || !name.match(letters)) {
-        validationErrors.push('Nazwa powinna składać się z min 5 liter!')
+        validationErrors.push('Nazwa powinna składać się z min. 5 znaków!')
     }
     if (!lat || isNaN(lat) || !(lat >= -90 && lat <= 90)) {
         validationErrors.push('Podaj szerokość w prawidłowym zasiegu(-90 do 90)!')
@@ -51,11 +54,11 @@ const AddDarkSkySpotForm = props => {
     if (!lng || isNaN(lng) || !(lng >= -180 && lng <= 180)) {
         validationErrors.push('Podaj długość w prawidłowym zasiegu(-180 do 180)!')
     }
-    if (!description || description.length <= 20 || !description.match(letters)) {
-        validationErrors.push('Dodaj opis składający sięz min 20 liter!')
+    if (!description || description.length <= 10 || description.length > 200 || !description.match(letters)) {
+        validationErrors.push('Dodaj opis składający się z min. 10 znaków i maksymalnie 200!')
     }
     if (!type) {
-        validationErrors.push('Wybierz rodzaj miejscówki!')
+        validationErrors.push('Wybierz rodzaj miejsca!')
     }
     return validationErrors;
   }
@@ -90,6 +93,9 @@ const AddDarkSkySpotForm = props => {
         }
       }
     })
+    .catch(error => {
+      console.log("There was an error with the `adding new spot request`: ", error);
+    });
   }
 
   return (
@@ -107,7 +113,7 @@ const AddDarkSkySpotForm = props => {
           <label className="form_label">Wybierz typ miejsca</label>
           <select value={type} name="type" onChange={handleTypeChange}>
             <option></option>
-            <option value="spot">Miejscówka</option>
+            <option value="spot">Punkt obserwacyjny</option>
             <option value="observatory">Obserwatorium</option>
           </select>
           <button className="form_btn" type="submit">Dodaj!</button>
